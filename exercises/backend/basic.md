@@ -59,6 +59,7 @@ Buat backend sederhana menggunakan Express.js (atau framework lain yang kamu kua
     ├── README.md
     └── package.json
 
+📝 Jangan lupa dokumentasikan API-mu dan taruh hasilnya di folder submission/backend/[namamu]/backend-basic/.
 ---
 ## 📚 Referensi Belajar
      Express.js Crash Course (Traversy Media)
