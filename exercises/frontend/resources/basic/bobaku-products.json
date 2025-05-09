@@ -1,0 +1,265 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Classic Milk Tea",
+      "category": "signature",
+      "price": 25000,
+      "description": "Our original milk tea made with premium black tea and creamy milk, topped with chewy boba pearls.",
+      "image": "images/products/classic-milk-tea.png",
+      "sugarOptions": [0, 30, 50, 70, 100],
+      "iceOptions": [0, 30, 50, 70, 100],
+      "toppings": ["Boba Pearls", "Grass Jelly", "Pudding", "Aloe Vera"],
+      "isPopular": true,
+      "allergens": ["Milk"]
+    },
+    {
+      "id": 2,
+      "name": "Taro Milk Tea",
+      "category": "signature",
+      "price": 28000,
+      "description": "Creamy milk tea infused with real taro flavor giving it a distinct purple color and sweet taste.",
+      "image": "images/products/taro-milk-tea.png",
+      "sugarOptions": [0, 30, 50, 70, 100],
+      "iceOptions": [0, 30, 50, 70, 100],
+      "toppings": ["Boba Pearls", "Grass Jelly", "Pudding", "Aloe Vera"],
+      "isPopular": true,
+      "allergens": ["Milk"]
+    },
+    {
+      "id": 3,
+      "name": "Brown Sugar Boba",
+      "category": "signature",
+      "price": 30000,
+      "description": "Fresh milk with brown sugar syrup and boba pearls cooked in brown sugar, creating beautiful tiger stripes.",
+      "image": "images/products/brown-sugar-boba.png",
+      "sugarOptions": [0, 30, 50, 70, 100],
+      "iceOptions": [0, 30, 50, 70, 100],
+      "toppings": ["Extra Boba Pearls", "Grass Jelly", "Pudding"],
+      "isPopular": true,
+      "allergens": ["Milk"]
+    },
+    {
+      "id": 4,
+      "name": "Matcha Latte",
+      "category": "signature",
+      "price": 28000,
+      "description": "Premium Japanese matcha powder blended with fresh milk creating a perfect balance of bittersweet flavors.",
+      "image": "images/products/matcha-latte.png",
+      "sugarOptions": [0, 30, 50, 70, 100],
+      "iceOptions": [0, 30, 50, 70, 100],
+      "toppings": ["Boba Pearls", "Red Bean", "Pudding"],
+      "isPopular": false,
+      "allergens": ["Milk"]
+    },
+    {
+      "id": 5,
+      "name": "Chocolate Boba",
+      "category": "classic",
+      "price": 27000,
+      "description": "Rich chocolate flavor combined with fresh milk and chewy boba pearls for a delightful treat.",
+      "image": "images/products/chocolate-boba.png",
+      "sugarOptions": [0, 30, 50, 70, 100],
+      "iceOptions": [0, 30, 50, 70, 100],
+      "toppings": ["Boba Pearls", "Pudding", "Oreo Crumbs"],
+      "isPopular": false,
+      "allergens": ["Milk"]
+    },
+    {
+      "id": 6,
+      "name": "Lychee Fruit Tea",
+      "category": "fruit",
+      "price": 26000,
+      "description": "Refreshing black tea infused with sweet lychee flavor and fresh lychee fruit bits.",
+      "image": "images/products/lychee-fruit-tea.png",
+      "sugarOptions": [0, 30, 50, 70, 100],
+      "iceOptions": [0, 30, 50, 70, 100],
+      "toppings": ["Boba Pearls", "Grass Jelly", "Aloe Vera", "Coconut Jelly"],
+      "isPopular": false,
+      "allergens": []
+    },
+    {
+      "id": 7,
+      "name": "Strawberry Milk Tea",
+      "category": "fruit",
+      "price": 27000,
+      "description": "Fresh strawberry puree mixed with our classic milk tea creating a perfect fruity milk tea balance.",
+      "image": "images/products/strawberry-milk-tea.png",
+      "sugarOptions": [0, 30, 50, 70, 100],
+      "iceOptions": [0, 30, 50, 70, 100],
+      "toppings": ["Boba Pearls", "Pudding", "Fresh Strawberry"],
+      "isPopular": false,
+      "allergens": ["Milk"]
+    },
+    {
+      "id": 8,
+      "name": "Mango Green Tea",
+      "category": "fruit",
+      "price": 26000,
+      "description": "Green tea infused with real mango puree for a tropical refreshment.",
+      "image": "images/products/mango-green-tea.png",
+      "sugarOptions": [0, 30, 50, 70, 100],
+      "iceOptions": [0, 30, 50, 70, 100],
+      "toppings": ["Boba Pearls", "Coconut Jelly", "Aloe Vera"],
+      "isPopular": true,
+      "allergens": []
+    },
+    {
+      "id": 9,
+      "name": "Oreo Cream Milk Tea",
+      "category": "special",
+      "price": 32000,
+      "description": "Milk tea blended with crushed Oreo cookies and topped with whipped cream and cookie crumbs.",
+      "image": "images/products/oreo-cream-milk-tea.png",
+      "sugarOptions": [0, 30, 50, 70, 100],
+      "iceOptions": [0, 30, 50, 70, 100],
+      "toppings": ["Boba Pearls", "Pudding", "Extra Oreo"],
+      "isPopular": true,
+      "allergens": ["Milk", "Wheat"]
+    },
+    {
+      "id": 10,
+      "name": "Hazelnut Milk Tea",
+      "category": "classic",
+      "price": 27000,
+      "description": "Our classic milk tea infused with rich hazelnut flavor for a nutty aroma and taste.",
+      "image": "images/products/hazelnut-milk-tea.png",
+      "sugarOptions": [0, 30, 50, 70, 100],
+      "iceOptions": [0, 30, 50, 70, 100],
+      "toppings": ["Boba Pearls", "Pudding", "Grass Jelly"],
+      "isPopular": false,
+      "allergens": ["Milk", "Nuts"]
+    },
+    {
+      "id": 11,
+      "name": "Wintermelon Milk Tea",
+      "category": "classic",
+      "price": 25000,
+      "description": "Traditional Taiwanese flavor, slightly sweet with a unique taste that resembles caramel.",
+      "image": "images/products/wintermelon-milk-tea.png",
+      "sugarOptions": [0, 30, 50, 70, 100],
+      "iceOptions": [0, 30, 50, 70, 100],
+      "toppings": ["Boba Pearls", "Grass Jelly", "Red Bean"],
+      "isPopular": false,
+      "allergens": ["Milk"]
+    },
+    {
+      "id": 12,
+      "name": "Red Bean Milk Tea",
+      "category": "special",
+      "price": 29000,
+      "description": "Milk tea with sweet red bean paste that adds texture and a traditional taste loved across Asia.",
+      "image": "images/products/red-bean-milk-tea.png",
+      "sugarOptions": [0, 30, 50, 70, 100],
+      "iceOptions": [0, 30, 50, 70, 100],
+      "toppings": ["Boba Pearls", "Extra Red Bean", "Pudding"],
+      "isPopular": false,
+      "allergens": ["Milk"]
+    },
+    {
+      "id": 13,
+      "name": "Passion Fruit Green Tea",
+      "category": "fruit",
+      "price": 26000,
+      "description": "Light green tea with refreshing passion fruit flavor and real passion fruit seeds.",
+      "image": "images/products/passion-fruit-green-tea.png",
+      "sugarOptions": [0, 30, 50, 70, 100],
+      "iceOptions": [0, 30, 50, 70, 100],
+      "toppings": ["Boba Pearls", "Coconut Jelly", "Aloe Vera"],
+      "isPopular": false,
+      "allergens": []
+    },
+    {
+      "id": 14,
+      "name": "Honey Milk Tea",
+      "category": "classic",
+      "price": 26000,
+      "description": "Our classic milk tea sweetened with natural honey instead of sugar for a healthier option.",
+      "image": "images/products/honey-milk-tea.png",
+      "sugarOptions": [0, 30, 50, 70, 100],
+      "iceOptions": [0, 30, 50, 70, 100],
+      "toppings": ["Boba Pearls", "Grass Jelly", "Pudding"],
+      "isPopular": false,
+      "allergens": ["Milk"]
+    },
+    {
+      "id": 15,
+      "name": "Thai Milk Tea",
+      "category": "special",
+      "price": 28000,
+      "description": "Strong black tea mixed with spices, sugar, and condensed milk creating that iconic orange color.",
+      "image": "images/products/thai-milk-tea.png",
+      "sugarOptions": [0, 30, 50, 70, 100],
+      "iceOptions": [0, 30, 50, 70, 100],
+      "toppings": ["Boba Pearls", "Grass Jelly", "Pudding"],
+      "isPopular": true,
+      "allergens": ["Milk"]
+    }
+  ],
+  
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Items"
+    },
+    {
+      "id": "signature",
+      "name": "Signature"
+    },
+    {
+      "id": "classic",
+      "name": "Classic"
+    },
+    {
+      "id": "fruit",
+      "name": "Fruit Tea"
+    },
+    {
+      "id": "special",
+      "name": "Special"
+    }
+  ],
+  
+  "toppings": [
+    {
+      "id": "boba",
+      "name": "Boba Pearls",
+      "price": 3000
+    },
+    {
+      "id": "grass_jelly",
+      "name": "Grass Jelly",
+      "price": 4000
+    },
+    {
+      "id": "pudding",
+      "name": "Pudding",
+      "price": 4000
+    },
+    {
+      "id": "aloe_vera",
+      "name": "Aloe Vera",
+      "price": 5000
+    },
+    {
+      "id": "red_bean",
+      "name": "Red Bean",
+      "price": 5000
+    },
+    {
+      "id": "coconut_jelly",
+      "name": "Coconut Jelly",
+      "price": 4000
+    },
+    {
+      "id": "oreo",
+      "name": "Oreo Crumbs",
+      "price": 5000
+    },
+    {
+      "id": "strawberry",
+      "name": "Fresh Strawberry",
+      "price": 6000
+    }
+  ]
+}
