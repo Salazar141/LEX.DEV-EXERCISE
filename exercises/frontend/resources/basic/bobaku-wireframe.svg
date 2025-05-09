@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 1800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="1800" fill="#f8f8f8"/>
+  
+  <!-- Header/Navbar -->
+  <rect x="0" y="0" width="800" height="80" fill="#472D2D" />
+  <!-- Logo -->
+  <circle cx="60" cy="40" r="25" fill="#FFC3A1" />
+  <text x="60" y="45" text-anchor="middle" font-family="Arial" font-size="16" fill="#472D2D" font-weight="bold">BOBA</text>
+  <!-- Nav Items -->
+  <text x="150" y="45" font-family="Arial" font-size="14" fill="#fff">Home</text>
+  <text x="220" y="45" font-family="Arial" font-size="14" fill="#fff">Menu</text>
+  <text x="290" y="45" font-family="Arial" font-size="14" fill="#fff">About Us</text>
+  <text x="380" y="45" font-family="Arial" font-size="14" fill="#fff">Locations</text>
+  <text x="470" y="45" font-family="Arial" font-size="14" fill="#fff">Contact</text>
+  <!-- Shopping Cart -->
+  <circle cx="740" cy="40" r="18" fill="#FFC3A1" />
+  <text x="740" y="45" text-anchor="middle" font-family="Arial" font-size="14" fill="#472D2D">🛒</text>
+  
+  <!-- Hero Section -->
+  <rect x="0" y="80" width="800" height="400" fill="#A27B5C" />
+  <rect x="50" y="150" width="350" height="200" fill="#DCD7C9" rx="5" ry="5" />
+  <text x="70" y="200" font-family="Arial" font-size="32" font-weight="bold" fill="#472D2D">Fresh Premium Boba</text>
+  <text x="70" y="230" font-family="Arial" font-size="18" fill="#472D2D">Experience the authentic taste of Taiwan</text>
+  <text x="70" y="260" font-family="Arial" font-size="18" fill="#472D2D">with our handcrafted bubble tea</text>
+  <rect x="70" y="290" width="150" height="40" rx="20" ry="20" fill="#FFC3A1" />
+  <text x="145" y="315" text-anchor="middle" font-family="Arial" font-size="16" fill="#472D2D" font-weight="bold">ORDER NOW</text>
+  <!-- Hero Image Placeholder -->
+  <circle cx="600" cy="250" r="120" fill="#FFC3A1" />
+  <circle cx="600" cy="250" r="100" fill="#A27B5C" />
+  <circle cx="600" cy="280" r="15" fill="#3A3845" />
+  <circle cx="570" cy="300" r="15" fill="#3A3845" />
+  <circle cx="630" cy="300" r="15" fill="#3A3845" />
+  
+  <!-- Featured Products Section -->
+  <text x="400" y="530" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#472D2D">Our Signature Drinks</text>
+  <line x1="250" y1="550" x2="550" y2="550" stroke="#FFC3A1" stroke-width="3" />
+  
+  <!-- Product Cards - Row 1 -->
+  <rect x="50" y="580" width="220" height="280" rx="10" ry="10" fill="#DCD7C9" />
+  <rect x="50" y="580" width="220" height="160" rx="10" ry="10" fill="#A27B5C" />
+  <text x="160" y="770" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#472D2D">Classic Milk Tea</text>
+  <text x="160" y="795" text-anchor="middle" font-family="Arial" font-size="14" fill="#472D2D">Rp 25.000</text>
+  <rect x="75" y="820" width="170" height="30" rx="15" ry="15" fill="#FFC3A1" />
+  <text x="160" y="840" text-anchor="middle" font-family="Arial" font-size="14" fill="#472D2D">Add to Cart</text>
+  
+  <rect x="290" y="580" width="220" height="280" rx="10" ry="10" fill="#DCD7C9" />
+  <rect x="290" y="580" width="220" height="160" rx="10" ry="10" fill="#A27B5C" />
+  <text x="400" y="770" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#472D2D">Taro Milk Tea</text>
+  <text x="400" y="795" text-anchor="middle" font-family="Arial" font-size="14" fill="#472D2D">Rp 28.000</text>
+  <rect x="315" y="820" width="170" height="30" rx="15" ry="15" fill="#FFC3A1" />
+  <text x="400" y="840" text-anchor="middle" font-family="Arial" font-size="14" fill="#472D2D">Add to Cart</text>
+  
+  <rect x="530" y="580" width="220" height="280" rx="10" ry="10" fill="#DCD7C9" />
+  <rect x="530" y="580" width="220" height="160" rx="10" ry="10" fill="#A27B5C" />
+  <text x="640" y="770" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#472D2D">Brown Sugar Boba</text>
+  <text x="640" y="795" text-anchor="middle" font-family="Arial" font-size="14" fill="#472D2D">Rp 30.000</text>
+  <rect x="555" y="820" width="170" height="30" rx="15" ry="15" fill="#FFC3A1" />
+  <text x="640" y="840" text-anchor="middle" font-family="Arial" font-size="14" fill="#472D2D">Add to Cart</text>
+  
+  <!-- Product Cards - Row 2 -->
+  <rect x="50" y="880" width="220" height="280" rx="10" ry="10" fill="#DCD7C9" />
+  <rect x="50" y="880" width="220" height="160" rx="10" ry="10" fill="#A27B5C" />
+  <text x="160" y="1070" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#472D2D">Matcha Latte</text>
+  <text x="160" y="1095" text-anchor="middle" font-family="Arial" font-size="14" fill="#472D2D">Rp 28.000</text>
+  <rect x="75" y="1120" width="170" height="30" rx="15" ry="15" fill="#FFC3A1" />
+  <text x="160" y="1140" text-anchor="middle" font-family="Arial" font-size="14" fill="#472D2D">Add to Cart</text>
+  
+  <rect x="290" y="880" width="220" height="280" rx="10" ry="10" fill="#DCD7C9" />
+  <rect x="290" y="880" width="220" height="160" rx="10" ry="10" fill="#A27B5C" />
+  <text x="400" y="1070" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#472D2D">Chocolate Boba</text>
+  <text x="400" y="1095" text-anchor="middle" font-family="Arial" font-size="14" fill="#472D2D">Rp 27.000</text>
+  <rect x="315" y="1120" width="170" height="30" rx="15" ry="15" fill="#FFC3A1" />
+  <text x="400" y="1140" text-anchor="middle" font-family="Arial" font-size="14" fill="#472D2D">Add to Cart</text>
+  
+  <rect x="530" y="880" width="220" height="280" rx="10" ry="10" fill="#DCD7C9" />
+  <rect x="530" y="880" width="220" height="160" rx="10" ry="10" fill="#A27B5C" />
+  <text x="640" y="1070" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#472D2D">Fruit Tea Series</text>
+  <text x="640" y="1095" text-anchor="middle" font-family="Arial" font-size="14" fill="#472D2D">Rp 26.000</text>
+  <rect x="555" y="1120" width="170" height="30" rx="15" ry="15" fill="#FFC3A1" />
+  <text x="640" y="1140" text-anchor="middle" font-family="Arial" font-size="14" fill="#472D2D">Add to Cart</text>
+  
+  <!-- About Section -->
+  <rect x="0" y="1200" width="800" height="300" fill="#472D2D" />
+  <text x="400" y="1250" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#FFC3A1">Our Story</text>
+  <rect x="200" y="1270" width="400" height="2" fill="#FFC3A1" />
+  <text x="400" y="1300" text-anchor="middle" font-family="Arial" font-size="14" fill="#DCD7C9">Founded in 2019, BobaKu brings authentic Taiwanese</text>
+  <text x="400" y="1325" text-anchor="middle" font-family="Arial" font-size="14" fill="#DCD7C9">bubble tea experience to Indonesia. We handcraft</text>
+  <text x="400" y="1350" text-anchor="middle" font-family="Arial" font-size="14" fill="#DCD7C9">each drink with premium ingredients and freshly</text>
+  <text x="400" y="1375" text-anchor="middle" font-family="Arial" font-size="14" fill="#DCD7C9">brewed tea to ensure the best quality in every cup.</text>
+  <rect x="325" y="1410" width="150" height="40" rx="20" ry="20" fill="#FFC3A1" />
+  <text x="400" y="1435" text-anchor="middle" font-family="Arial" font-size="16" fill="#472D2D" font-weight="bold">LEARN MORE</text>
+  
+  <!-- Testimonials -->
+  <text x="400" y="1550" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#472D2D">What Our Customers Say</text>
+  <line x1="250" y1="1570" x2="550" y2="1570" stroke="#FFC3A1" stroke-width="3" />
+  
+  <rect x="150" y="1600" width="500" height="100" rx="10" ry="10" fill="#DCD7C9" />
+  <circle cx="200" cy="1650" r="30" fill="#A27B5C" />
+  <text x="250" y="1630" font-family="Arial" font-size="16" font-weight="bold" fill="#472D2D">Sarah P.</text>
+  <text x="250" y="1655" font-family="Arial" font-size="14" fill="#472D2D">"Best boba in town! I love their brown sugar series."</text>
+  
+  <!-- Footer -->
+  <rect x="0" y="1740" width="800" height="60" fill="#472D2D" />
+  <text x="400" y="1775" text-anchor="middle" font-family="Arial" font-size="14" fill="#DCD7C9">© 2023 BobaKu. All rights reserved.</text>
+</svg>
