@@ -125,6 +125,13 @@ BobaKu ingin menambahkan form pre-order sederhana di website mereka untuk acara 
 ### ⏱ Estimasi Waktu
 3–4 jam
 
+### 📖Panduan, Dokumentasi, Resources dan Asset
+      exercises/frontend/resources/basic/validation-specs.md
+      exercises/frontend/resources/basic/json-response.json
+      exercises/frontend/resources/basic/error-states.svg
+      exercises/frontend/resources/basic/form-wireframe.svg
+      exercises/frontend/resources/basic/success-wireframe.svg
+
 ---
 
 ## 🎓 Referensi Belajar
