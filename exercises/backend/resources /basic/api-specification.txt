@@ -1,0 +1,637 @@
+openapi: 3.0.0
+info:
+  title: BobaKu Menu Catalog API
+  description: REST API untuk mengelola katalog menu minuman dan topping BobaKu
+  version: 1.0.0
+  contact:
+    name: BobaKu Tech Team
+    email: tech@bobaku.com
+
+servers:
+  - url: http://localhost:3000/api/v1
+    description: Development server
+
+tags:
+  - name: Menu
+    description: Operasi untuk mengelola menu minuman
+  - name: Topping
+    description: Operasi untuk mengelola topping
+
+paths:
+  /menu:
+    get:
+      summary: Mendapatkan daftar menu minuman
+      description: Endpoint ini mengembalikan daftar semua menu minuman dengan opsi filter dan sorting
+      tags: [Menu]
+      parameters:
+        - in: query
+          name: kategori
+          schema:
+            type: string
+          description: Filter berdasarkan kategori (Signature, Fruit Tea, Milk Tea, Coffee)
+        - in: query
+          name: tersedia
+          schema:
+            type: boolean
+          description: Filter berdasarkan ketersediaan
+        - in: query
+          name: sort
+          schema:
+            type: string
+            enum: [harga_asc, harga_desc, nama_asc, nama_desc]
+          description: Mengurutkan hasil berdasarkan harga atau nama
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            default: 10
+          description: Batas jumlah data yang dikembalikan
+        - in: query
+          name: page
+          schema:
+            type: integer
+            default: 1
+          description: Halaman yang diminta (untuk pagination)
+        - in: query
+          name: search
+          schema:
+            type: string
+          description: Pencarian berdasarkan nama menu
+      responses:
+        '200':
+          description: Daftar menu berhasil ditemukan
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  count:
+                    type: integer
+                    example: 2
+                  total:
+                    type: integer
+                    example: 10
+                  page:
+                    type: integer
+                    example: 1
+                  totalPages:
+                    type: integer
+                    example: 5
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Menu'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+                
+    post:
+      summary: Membuat menu minuman baru
+      description: Endpoint untuk menambahkan menu minuman baru ke katalog
+      tags: [Menu]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - nama
+                - harga_dasar
+                - kategori
+              properties:
+                nama:
+                  type: string
+                  example: "Matcha Latte"
+                harga_dasar:
+                  type: number
+                  example: 30000
+                deskripsi:
+                  type: string
+                  example: "Minuman matcha dengan susu yang lembut"
+                kategori:
+                  type: string
+                  enum: [Signature, Fruit Tea, Milk Tea, Coffee]
+                  example: "Signature"
+                level_manis_default:
+                  type: integer
+                  minimum: 0
+                  maximum: 100
+                  example: 50
+                level_es_default:
+                  type: integer
+                  minimum: 0
+                  maximum: 100
+                  example: 70
+                gambar_url:
+                  type: string
+                  example: "https://bobaku.com/img/matcha.jpg"
+                tersedia:
+                  type: boolean
+                  example: true
+      responses:
+        '201':
+          description: Menu berhasil dibuat
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  data:
+                    $ref: '#/components/schemas/Menu'
+        '400':
+          description: Validasi gagal
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+                
+  /menu/{id}:
+    get:
+      summary: Mendapatkan detail menu minuman
+      description: Endpoint untuk mendapatkan detail menu berdasarkan ID
+      tags: [Menu]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          description: ID menu minuman
+      responses:
+        '200':
+          description: Menu berhasil ditemukan
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  data:
+                    $ref: '#/components/schemas/Menu'
+        '404':
+          description: Menu tidak ditemukan
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              
+    put:
+      summary: Mengupdate menu minuman
+      description: Endpoint untuk memperbarui menu berdasarkan ID
+      tags: [Menu]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          description: ID menu minuman
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nama:
+                  type: string
+                  example: "Matcha Latte Premium"
+                harga_dasar:
+                  type: number
+                  example: 35000
+                deskripsi:
+                  type: string
+                  example: "Minuman matcha premium dengan susu yang lembut"
+                kategori:
+                  type: string
+                  enum: [Signature, Fruit Tea, Milk Tea, Coffee]
+                  example: "Signature"
+                level_manis_default:
+                  type: integer
+                  minimum: 0
+                  maximum: 100
+                  example: 50
+                level_es_default:
+                  type: integer
+                  minimum: 0
+                  maximum: 100
+                  example: 70
+                gambar_url:
+                  type: string
+                  example: "https://bobaku.com/img/matcha-premium.jpg"
+                tersedia:
+                  type: boolean
+                  example: true
+      responses:
+        '200':
+          description: Menu berhasil diperbarui
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  data:
+                    $ref: '#/components/schemas/Menu'
+        '400':
+          description: Validasi gagal
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Menu tidak ditemukan
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+                
+    delete:
+      summary: Menghapus menu minuman
+      description: Endpoint untuk menghapus menu berdasarkan ID
+      tags: [Menu]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          description: ID menu minuman
+      responses:
+        '200':
+          description: Menu berhasil dihapus
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  message:
+                    type: string
+                    example: "Menu berhasil dihapus"
+        '404':
+          description: Menu tidak ditemukan
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+                
+  /toppings:
+    get:
+      summary: Mendapatkan daftar topping
+      description: Endpoint ini mengembalikan daftar semua topping dengan opsi filter
+      tags: [Topping]
+      parameters:
+        - in: query
+          name: tersedia
+          schema:
+            type: boolean
+          description: Filter berdasarkan ketersediaan
+        - in: query
+          name: sort
+          schema:
+            type: string
+            enum: [harga_asc, harga_desc, nama_asc, nama_desc]
+          description: Mengurutkan hasil berdasarkan harga tambahan atau nama
+      responses:
+        '200':
+          description: Daftar topping berhasil ditemukan
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  count:
+                    type: integer
+                    example: 3
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Topping'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    
+    post:
+      summary: Membuat topping baru
+      description: Endpoint untuk menambahkan topping baru
+      tags: [Topping]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - nama
+                - harga_tambahan
+              properties:
+                nama:
+                  type: string
+                  example: "Pudding"
+                harga_tambahan:
+                  type: number
+                  example: 7000
+                deskripsi:
+                  type: string
+                  example: "Pudding lembut dengan tekstur yang sempurna"
+                tersedia:
+                  type: boolean
+                  example: true
+      responses:
+        '201':
+          description: Topping berhasil dibuat
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  data:
+                    $ref: '#/components/schemas/Topping'
+        '400':
+          description: Validasi gagal
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+                
+  /toppings/{id}:
+    get:
+      summary: Mendapatkan detail topping
+      description: Endpoint untuk mendapatkan detail topping berdasarkan ID
+      tags: [Topping]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          description: ID topping
+      responses:
+        '200':
+          description: Topping berhasil ditemukan
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  data:
+                    $ref: '#/components/schemas/Topping'
+        '404':
+          description: Topping tidak ditemukan
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    
+    put:
+      summary: Mengupdate topping
+      description: Endpoint untuk memperbarui topping berdasarkan ID
+      tags: [Topping]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          description: ID topping
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nama:
+                  type: string
+                  example: "Pudding Special"
+                harga_tambahan:
+                  type: number
+                  example: 8000
+                deskripsi:
+                  type: string
+                  example: "Pudding spesial dengan rasa yang lebih kaya"
+                tersedia:
+                  type: boolean
+                  example: true
+      responses:
+        '200':
+          description: Topping berhasil diperbarui
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  data:
+                    $ref: '#/components/schemas/Topping'
+        '400':
+          description: Validasi gagal
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Topping tidak ditemukan
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    
+    delete:
+      summary: Menghapus topping
+      description: Endpoint untuk menghapus topping berdasarkan ID
+      tags: [Topping]
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          description: ID topping
+      responses:
+        '200':
+          description: Topping berhasil dihapus
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  message:
+                    type: string
+                    example: "Topping berhasil dihapus"
+        '404':
+          description: Topping tidak ditemukan
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+components:
+  schemas:
+    Menu:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "m001"
+        nama:
+          type: string
+          example: "Brown Sugar Boba Milk Tea"
+        harga_dasar:
+          type: number
+          example: 28000
+        deskripsi:
+          type: string
+          example: "Signature milk tea dengan brown sugar dan pearl yang chewy"
+        kategori:
+          type: string
+          enum: [Signature, Fruit Tea, Milk Tea, Coffee]
+          example: "Signature"
+        level_manis_default:
+          type: integer
+          minimum: 0
+          maximum: 100
+          example: 70
+        level_es_default:
+          type: integer
+          minimum: 0
+          maximum: 100
+          example: 50
+        gambar_url:
+          type: string
+          example: "https://bobaku.com/img/brown-sugar.jpg"
+        tersedia:
+          type: boolean
+          example: true
+        created_at:
+          type: string
+          format: date-time
+          example: "2023-09-15T07:30:00Z"
+        updated_at:
+          type: string
+          format: date-time
+          example: "2023-09-15T07:30:00Z"
+    
+    Topping:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "t001"
+        nama:
+          type: string
+          example: "Pearl"
+        harga_tambahan:
+          type: number
+          example: 5000
+        deskripsi:
+          type: string
+          example: "Pearl dengan tekstur chewy"
+        tersedia:
+          type: boolean
+          example: true
+        created_at:
+          type: string
+          format: date-time
+          example: "2023-09-15T07:30:00Z"
+        updated_at:
+          type: string
+          format: date-time
+          example: "2023-09-15T07:30:00Z"
+    
+    Error:
+      type: object
+      properties:
+        status:
+          type: string
+          example: "error"
+        message:
+          type: string
+          example: "Terjadi kesalahan saat memproses permintaan"
+        errors:
+          type: array
+          items:
+            type: string
+          example: ["Nama tidak boleh kosong", "Harga dasar harus angka positif"]
