@@ -1,0 +1,199 @@
+{
+  "menu": [
+    {
+      "id": "m001",
+      "nama": "Brown Sugar Boba Milk Tea",
+      "harga_dasar": 28000,
+      "deskripsi": "Signature milk tea dengan brown sugar dan pearl yang chewy",
+      "kategori": "Signature",
+      "level_manis_default": 70,
+      "level_es_default": 50,
+      "gambar_url": "https://bobaku.com/img/brown-sugar.jpg",
+      "tersedia": true,
+      "created_at": "2023-09-15T07:30:00Z",
+      "updated_at": "2023-09-15T07:30:00Z"
+    },
+    {
+      "id": "m002",
+      "nama": "Taro Milk Tea",
+      "harga_dasar": 25000,
+      "deskripsi": "Milk tea dengan rasa taro yang khas dan creamy",
+      "kategori": "Milk Tea",
+      "level_manis_default": 50,
+      "level_es_default": 30,
+      "gambar_url": "https://bobaku.com/img/taro.jpg",
+      "tersedia": true,
+      "created_at": "2023-09-15T08:15:00Z",
+      "updated_at": "2023-09-15T08:15:00Z"
+    },
+    {
+      "id": "m003",
+      "nama": "Classic Milk Tea",
+      "harga_dasar": 22000,
+      "deskripsi": "Milk tea original dengan rasa klasik yang timeless",
+      "kategori": "Milk Tea",
+      "level_manis_default": 50,
+      "level_es_default": 50,
+      "gambar_url": "https://bobaku.com/img/classic.jpg",
+      "tersedia": true,
+      "created_at": "2023-09-15T08:30:00Z",
+      "updated_at": "2023-09-15T08:30:00Z"
+    },
+    {
+      "id": "m004",
+      "nama": "Mango Fruit Tea",
+      "harga_dasar": 26000,
+      "deskripsi": "Fruit tea dengan potongan mangga segar",
+      "kategori": "Fruit Tea",
+      "level_manis_default": 60,
+      "level_es_default": 70,
+      "gambar_url": "https://bobaku.com/img/mango.jpg",
+      "tersedia": true,
+      "created_at": "2023-09-15T09:00:00Z",
+      "updated_at": "2023-09-15T09:00:00Z"
+    },
+    {
+      "id": "m005",
+      "nama": "Lychee Fruit Tea",
+      "harga_dasar": 26000,
+      "deskripsi": "Fruit tea dengan potongan leci yang manis",
+      "kategori": "Fruit Tea",
+      "level_manis_default": 60,
+      "level_es_default": 70,
+      "gambar_url": "https://bobaku.com/img/lychee.jpg",
+      "tersedia": true,
+      "created_at": "2023-09-15T09:15:00Z",
+      "updated_at": "2023-09-15T09:15:00Z"
+    },
+    {
+      "id": "m006",
+      "nama": "Caramel Coffee Boba",
+      "harga_dasar": 30000,
+      "deskripsi": "Kopi dengan karamel dan boba",
+      "kategori": "Coffee",
+      "level_manis_default": 65,
+      "level_es_default": 60,
+      "gambar_url": "https://bobaku.com/img/caramel-coffee.jpg",
+      "tersedia": true,
+      "created_at": "2023-09-15T09:30:00Z",
+      "updated_at": "2023-09-15T09:30:00Z"
+    },
+    {
+      "id": "m007",
+      "nama": "Matcha Latte",
+      "harga_dasar": 32000,
+      "deskripsi": "Latte matcha premium dengan bahan dari Jepang",
+      "kategori": "Signature",
+      "level_manis_default": 40,
+      "level_es_default": 50,
+      "gambar_url": "https://bobaku.com/img/matcha.jpg",
+      "tersedia": true,
+      "created_at": "2023-09-15T10:00:00Z",
+      "updated_at": "2023-09-15T10:00:00Z"
+    },
+    {
+      "id": "m008",
+      "nama": "Chocolate Boba Shake",
+      "harga_dasar": 33000,
+      "deskripsi": "Milkshake cokelat dengan boba",
+      "kategori": "Signature",
+      "level_manis_default": 80,
+      "level_es_default": 60,
+      "gambar_url": "https://bobaku.com/img/chocolate.jpg",
+      "tersedia": false,
+      "created_at": "2023-09-15T10:15:00Z",
+      "updated_at": "2023-09-15T10:15:00Z"
+    },
+    {
+      "id": "m009",
+      "nama": "Strawberry Fruit Tea",
+      "harga_dasar": 26000,
+      "deskripsi": "Fruit tea dengan potongan stroberi segar",
+      "kategori": "Fruit Tea",
+      "level_manis_default": 60,
+      "level_es_default": 70,
+      "gambar_url": "https://bobaku.com/img/strawberry.jpg",
+      "tersedia": true,
+      "created_at": "2023-09-15T10:30:00Z",
+      "updated_at": "2023-09-15T10:30:00Z"
+    },
+    {
+      "id": "m010",
+      "nama": "Vanilla Latte",
+      "harga_dasar": 29000,
+      "deskripsi": "Kopi dengan sirup vanilla dan susu",
+      "kategori": "Coffee",
+      "level_manis_default": 60,
+      "level_es_default": 50,
+      "gambar_url": "https://bobaku.com/img/vanilla-latte.jpg",
+      "tersedia": true,
+      "created_at": "2023-09-15T10:45:00Z",
+      "updated_at": "2023-09-15T10:45:00Z"
+    }
+  ],
+  "toppings": [
+    {
+      "id": "t001",
+      "nama": "Pearl",
+      "harga_tambahan": 5000,
+      "deskripsi": "Pearl dengan tekstur chewy",
+      "tersedia": true,
+      "created_at": "2023-09-15T07:00:00Z",
+      "updated_at": "2023-09-15T07:00:00Z"
+    },
+    {
+      "id": "t002",
+      "nama": "Grass Jelly",
+      "harga_tambahan": 6000,
+      "deskripsi": "Cincau segar dengan tekstur lembut",
+      "tersedia": true,
+      "created_at": "2023-09-15T07:05:00Z",
+      "updated_at": "2023-09-15T07:05:00Z"
+    },
+    {
+      "id": "t003",
+      "nama": "Cheese Foam",
+      "harga_tambahan": 8000,
+      "deskripsi": "Foam keju creamy dengan sedikit rasa asin",
+      "tersedia": true,
+      "created_at": "2023-09-15T07:10:00Z",
+      "updated_at": "2023-09-15T07:10:00Z"
+    },
+    {
+      "id": "t004",
+      "nama": "Pudding",
+      "harga_tambahan": 7000,
+      "deskripsi": "Pudding lembut dengan tekstur yang sempurna",
+      "tersedia": true,
+      "created_at": "2023-09-15T07:15:00Z",
+      "updated_at": "2023-09-15T07:15:00Z"
+    },
+    {
+      "id": "t005",
+      "nama": "Coconut Jelly",
+      "harga_tambahan": 6000,
+      "deskripsi": "Jelly kelapa yang menyegarkan",
+      "tersedia": true,
+      "created_at": "2023-09-15T07:20:00Z",
+      "updated_at": "2023-09-15T07:20:00Z"
+    },
+    {
+      "id": "t006",
+      "nama": "Red Bean",
+      "harga_tambahan": 6000,
+      "deskripsi": "Kacang merah manis",
+      "tersedia": false,
+      "created_at": "2023-09-15T07:25:00Z",
+      "updated_at": "2023-09-15T07:25:00Z"
+    },
+    {
+      "id": "t007",
+      "nama": "Aloe Vera",
+      "harga_tambahan": 7000,
+      "deskripsi": "Potongan lidah buaya yang segar",
+      "tersedia": true,
+      "created_at": "2023-09-15T07:30:00Z",
+      "updated_at": "2023-09-15T07:30:00Z"
+    }
+  ]
+}
