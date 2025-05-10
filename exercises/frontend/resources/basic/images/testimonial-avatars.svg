@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define Avatar Masks -->
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="85" cy="85" r="64" />
+    </clipPath>
+    <clipPath id="circleClip2">
+      <circle cx="250" cy="85" r="64" />
+    </clipPath>
+    <clipPath id="circleClip3">
+      <circle cx="415" cy="85" r="64" />
+    </clipPath>
+  </defs>
+  
+  <!-- Sarah P. Avatar -->
+  <g transform="translate(0, 0)">
+    <circle cx="85" cy="85" r="64" fill="#f0f0f0" stroke="#e0e0e0" stroke-width="3" />
+    <g clip-path="url(#circleClip)">
+      <!-- Background -->
+      <rect x="21" y="21" width="128" height="200" fill="#ffd9e8" />
+      <!-- Hair -->
+      <ellipse cx="85" cy="60" rx="45" ry="35" fill="#8a6642" />
+      <!-- Face -->
+      <circle cx="85" cy="90" r="35" fill="#ffdfc4" />
+      <!-- Eyes -->
+      <ellipse cx="73" cy="83" rx="6" ry="5" fill="#5d3a18" />
+      <ellipse cx="97" cy="83" rx="6" ry="5" fill="#5d3a18" />
+      <!-- Eyebrows -->
+      <path d="M67,77 Q73,74 79,77" fill="none" stroke="#8a6642" stroke-width="2" />
+      <path d="M91,77 Q97,74 103,77" fill="none" stroke="#8a6642" stroke-width="2" />
+      <!-- Mouth -->
+      <path d="M75,103 Q85,108 95,103" fill="none" stroke="#de5d83" stroke-width="2" />
+      <!-- Nose -->
+      <path d="M85,90 Q86,95 82,95" fill="none" stroke="#ffdfc4" stroke-width="2" />
+      <!-- Shirt -->
+      <path d="M50,130 C50,110 120,110 120,130 L120,200 L50,200 Z" fill="#ffb6c1" />
+      <path d="M70,130 C70,142 100,142 100,130" fill="none" stroke="#ff94b1" stroke-width="2" />
+    </g>
+    <text x="85" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Sarah P.</text>
+  </g>
+  
+  <!-- Michael T. Avatar -->
+  <g transform="translate(165, 0)">
+    <circle cx="85" cy="85" r="64" fill="#f0f0f0" stroke="#e0e0e0" stroke-width="3" />
+    <g clip-path="url(#circleClip2)">
+      <!-- Background -->
+      <rect x="186" y="21" width="128" height="200" fill="#d9e6ff" />
+      <!-- Hair -->
+      <path d="M220,55 C210,40 230,35 250,35 C270,35 290,40 280,55 C295,60 295,70 290,75 L290,65 C285,75 290,70 250,70 C210,70 215,75 210,65 L210,75 C205,70 205,60 220,55" fill="#302010" />
+      <!-- Face -->
+      <circle cx="250" cy="90" r="35" fill="#ffe0bd" />
+      <!-- Eyes -->
+      <ellipse cx="238" cy="83" rx="6" ry="5" fill="#2c4a73" />
+      <ellipse cx="262" cy="83" rx="6" ry="5" fill="#2c4a73" />
+      <!-- Eyebrows -->
+      <path d="M232,74 Q238,71 244,74" fill="none" stroke="#302010" stroke-width="2" />
+      <path d="M256,74 Q262,71 268,74" fill="none" stroke="#302010" stroke-width="2" />
+      <!-- Mouth -->
+      <path d="M240,102 Q250,107 260,102" fill="none" stroke="#b97a57" stroke-width="2" />
+      <!-- Nose -->
+      <path d="M250,90 Q251,95 247,95" fill="none" stroke="#ffe0bd" stroke-width="2" />
+      <!-- Shirt -->
+      <path d="M215,130 C215,110 285,110 285,130 L285,200 L215,200 Z" fill="#4a72ab" />
+      <path d="M235,130 L235,150" stroke="#ffffff" stroke-width="2" />
+      <path d="M265,130 L265,150" stroke="#ffffff" stroke-width="2" />
+    </g>
+    <text x="85" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Michael T.</text>
+  </g>
+  
+  <!-- Lisa R. Avatar -->
+  <g transform="translate(330, 0)">
+    <circle cx="85" cy="85" r="64" fill="#f0f0f0" stroke="#e0e0e0" stroke-width="3" />
+    <g clip-path="url(#circleClip3)">
+      <!-- Background -->
+      <rect x="351" y="21" width="128" height="200" fill="#f4e9ff" />
+      <!-- Hair -->
+      <path d="M385,30 C405,20 425,20 445,30 C455,40 455,60 445,70 L445,50 C430,65 400,65 385,50 L385,70 C375,60 375,40 385,30" fill="#111111" />
+      <path d="M380,65 C375,80 365,95 370,110 C375,120 390,125 380,150" fill="none" stroke="#111111" stroke-width="10" />
+      <path d="M450,65 C455,80 465,95 460,110 C455,120 440,125 450,150" fill="none" stroke="#111111" stroke-width="10" />
+      <!-- Face -->
+      <circle cx="415" cy="90" r="35" fill="#fff0db" />
+      <!-- Eyes -->
+      <ellipse cx="403" cy="83" rx="6" ry="5" fill="#5a4499" />
+      <ellipse cx="427" cy="83" rx="6" ry="5" fill="#5a4499" />
+      <!-- Eyebrows -->
+      <path d="M397,74 Q403,71 409,74" fill="none" stroke="#111111" stroke-width="2" />
+      <path d="M421,74 Q427,71 433,74" fill="none" stroke="#111111" stroke-width="2" />
+      <!-- Mouth -->
+      <path d="M405,102 Q415,107 425,102" fill="none" stroke="#c97fb4" stroke-width="2" />
+      <!-- Nose -->
+      <path d="M415,90 Q416,95 412,95" fill="none" stroke="#fff0db" stroke-width="2" />
+      <!-- Shirt -->
+      <path d="M380,130 C380,110 450,110 450,130 L450,200 L380,200 Z" fill="#9370db" />
+      <circle cx="415" cy="150" r="10" fill="#8560c0" />
+    </g>
+    <text x="85" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Lisa R.</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="250" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">User Testimonial Avatars</text>
+  
+  <!-- Description -->
+  <text x="250" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">128x128px circular avatars for customer testimonials</text>
+</svg>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background bubble pattern -->
+  <defs>
+    <pattern id="bubblePattern" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="3" fill="#d1b08c" opacity="0.5"/>
+      <circle cx="30" cy="25" r="2" fill="#d1b08c" opacity="0.3"/>
+      <circle cx="45" cy="40" r="4" fill="#d1b08c" opacity="0.4"/>
+    </pattern>
+    <linearGradient id="tigerStripe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5deb3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="url(#bubblePattern)" opacity="0.3"/>
+
+  <!-- Cup Base -->
+  <path d="M160,120 L340,120 L300,420 L200,420 Z" fill="#8b4513" opacity="0.1"/>
+  <path d="M170,130 L330,130 L295,410 L205,410 Z" fill="#ffffff"/>
+  
+  <!-- Milk content -->
+  <path d="M180,150 L320,150 L290,390 L210,390 Z" fill="#f5deb3"/>
+  
+  <!-- Brown Sugar Tiger Stripes -->
+  <path d="M180,150 C190,170 210,165 200,190 C190,215 210,240 190,260 C170,290 200,300 180,320 C160,340 180,350 170,370 L210,390 L180,150 Z" fill="#8b4513" opacity="0.8"/>
+  <path d="M320,150 C310,170 300,165 310,190 C320,215 310,240 320,260 C330,290 300,310 310,330 C320,350 300,360 300,380 L290,390 L320,150 Z" fill="#8b4513" opacity="0.8"/>
+  <path d="M220,150 C230,170 245,180 240,200 C235,220 250,230 245,250 C240,270 260,290 250,310 L245,390 L220,150 Z" fill="#8b4513" opacity="0.5"/>
+  
+  <!-- Tapioca Pearls -->
+  <circle cx="220" cy="370" r="10" fill="#3a1f00"/>
+  <circle cx="250" cy="375" r="10" fill="#3a1f00"/>
+  <circle cx="280" cy="370" r="10" fill="#3a1f00"/>
+  <circle cx="230" cy="350" r="10" fill="#3a1f00"/>
+  <circle cx="260" cy="360" r="10" fill="#3a1f00"/>
+  <circle cx="235" cy="380" r="10" fill="#3a1f00"/>
+  <circle cx="270" cy="380" r="10" fill="#3a1f00"/>
+  <circle cx="240" cy="335" r="10" fill="#3a1f00"/>
+  <circle cx="215" cy="325" r="10" fill="#3a1f00"/>
+  <circle cx="275" cy="340" r="10" fill="#3a1f00"/>
+  
+  <!-- Cup Lid -->
+  <path d="M150,120 L350,120 L340,100 L160,100 Z" fill="#f0f0f0"/>
+  
+  <!-- Straw -->
+  <path d="M245,95 L245,380" stroke="#8b4513" stroke-width="10" stroke-linecap="round"/>
+  <path d="M245,95 L250,80 L255,95" fill="#8b4513"/>
+  
+  <!-- Reflection Highlights -->
+  <path d="M190,180 L200,180 L195,320 L185,320 Z" fill="#ffffff" opacity="0.2"/>
+  <ellipse cx="250" cy="150" rx="60" ry="10" fill="#ffffff" opacity="0.3"/>
+  
+  <!-- Brown Sugar Effect -->
+  <circle cx="210" cy="270" r="3" fill="#5e2c04"/>
+  <circle cx="230" cy="240" r="2" fill="#5e2c04"/>
+  <circle cx="270" cy="220" r="3" fill="#5e2c04"/>
+  <circle cx="250" cy="280" r="2" fill="#5e2c04"/>
+  <circle cx="290" cy="260" r="2" fill="#5e2c04"/>
+</svg>

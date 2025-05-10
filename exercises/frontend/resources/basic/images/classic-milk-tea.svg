@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background bubble pattern -->
+  <defs>
+    <pattern id="bubblePattern" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="3" fill="#f8e6d1" opacity="0.5"/>
+      <circle cx="30" cy="25" r="2" fill="#f8e6d1" opacity="0.3"/>
+      <circle cx="45" cy="40" r="4" fill="#f8e6d1" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="500" height="500" fill="url(#bubblePattern)" opacity="0.3"/>
+
+  <!-- Cup Base -->
+  <path d="M160,120 L340,120 L300,420 L200,420 Z" fill="#9b724e" opacity="0.1"/>
+  <path d="M170,130 L330,130 L295,410 L205,410 Z" fill="#ffffff"/>
+  
+  <!-- Tea content -->
+  <path d="M180,150 L320,150 L290,390 L210,390 Z" fill="#8b4513"/>
+  
+  <!-- Milk Swirl -->
+  <path d="M200,170 Q220,200 240,170 Q260,140 280,170 Q300,200 290,170 L285,350 L215,350 Z" fill="#e0b990"/>
+  
+  <!-- Tapioca Pearls -->
+  <circle cx="220" cy="370" r="8" fill="#221c1a"/>
+  <circle cx="250" cy="375" r="8" fill="#221c1a"/>
+  <circle cx="280" cy="370" r="8" fill="#221c1a"/>
+  <circle cx="230" cy="350" r="8" fill="#221c1a"/>
+  <circle cx="260" cy="360" r="8" fill="#221c1a"/>
+  <circle cx="235" cy="380" r="8" fill="#221c1a"/>
+  <circle cx="270" cy="380" r="8" fill="#221c1a"/>
+  
+  <!-- Cup Lid -->
+  <path d="M150,120 L350,120 L340,100 L160,100 Z" fill="#f0f0f0"/>
+  
+  <!-- Straw -->
+  <path d="M245,95 L245,380" stroke="#ff6b6b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M245,95 L250,80 L255,95" fill="#ff6b6b"/>
+  
+  <!-- Reflection Highlights -->
+  <path d="M190,180 L200,180 L195,320 L185,320 Z" fill="#ffffff" opacity="0.2"/>
+  <ellipse cx="250" cy="150" rx="60" ry="10" fill="#ffffff" opacity="0.3"/>
+</svg>
