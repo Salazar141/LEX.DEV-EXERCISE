@@ -1,0 +1,18 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="16" fill="#472D2D"/>
+  
+  <!-- Cup -->
+  <path d="M10 10L9 24H23L22 10H10Z" fill="#FFC3A1"/>
+  <path d="M9 24H23V26H9V24Z" fill="#A27B5C"/>
+  
+  <!-- Straw -->
+  <rect x="15" y="6" width="2" height="8" fill="#DCD7C9"/>
+  
+  <!-- Boba pearls -->
+  <circle cx="12" cy="20" r="1.5" fill="#472D2D"/>
+  <circle cx="16" cy="21" r="1.5" fill="#472D2D"/>
+  <circle cx="20" cy="20" r="1.5" fill="#472D2D"/>
+  <circle cx="14" cy="18" r="1.5" fill="#472D2D"/>
+  <circle cx="18" cy="18" r="1.5" fill="#472D2D"/>
+</svg>

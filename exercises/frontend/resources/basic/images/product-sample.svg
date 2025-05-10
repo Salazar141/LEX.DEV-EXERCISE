@@ -1,0 +1,20 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="cupGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d3a67d" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#472D2D" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Cup container -->
+  <path d="M180 110 L160 400 L340 400 L320 110 Z" fill="#f4f1eb" stroke="#A27B5C" stroke-width="2"/>
+  
+  <!-- Lid -->
+  <path d="M150 110 L350 110 L335 140 L165 140 Z" fill="#A27B5C" stroke="#A27B5C" stroke-width="1"/>
+  
+  <!-- Straw -->
+  <rect x="240" y="50" width="20" height="150" rx="10" fill="#FFC3A1" stroke="#472D2D" stroke-width="1"/>
+  
+  <!-- Brown sugar streaks -->
+  <path d="M180 140 C230 180, 260 170, 320 140 

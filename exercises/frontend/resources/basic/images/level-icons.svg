@@ -1,0 +1,30 @@
+<svg viewBox="0 0 100 30" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sugar Level Icon -->
+  <g id="sugar-level-icon" transform="translate(0,0)">
+    <circle cx="15" cy="15" r="15" fill="none"/>
+    <path d="M10 20V12M15 20V8M20 20V15" stroke="#472D2D" stroke-width="2" stroke-linecap="round"/>
+    <path d="M7 20h16" stroke="#472D2D" stroke-width="1.5"/>
+    <path d="M13 7.5c0 1.5 4 1.5 4 0s-4-3-4-1.5z" fill="#472D2D"/>
+  </g>
+  
+  <!-- Ice Level Icon -->
+  <g id="ice-level-icon" transform="translate(35,0)">
+    <circle cx="15" cy="15" r="15" fill="none"/>
+    <path d="M10 20V15M15 20V10M20 20V12" stroke="#472D2D" stroke-width="2" stroke-linecap="round"/>
+    <path d="M7 20h16" stroke="#472D2D" stroke-width="1.5"/>
+    <!-- Ice cubes -->
+    <rect x="13" y="6" width="4" height="4" rx="1" fill="#472D2D" transform="rotate(15 13 6)"/>
+    <rect x="18" y="9" width="3" height="3" rx="0.5" fill="#472D2D" transform="rotate(-10 18 9)"/>
+  </g>
+  
+  <!-- Add/Remove Item Icons -->
+  <g id="add-remove-icons" transform="translate(70,0)">
+    <circle cx="15" cy="15" r="15" fill="none"/>
+    <!-- Add -->
+    <circle cx="10" cy="15" r="7" fill="#FFC3A1"/>
+    <path d="M10 11v8M6 15h8" stroke="#472D2D" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Remove -->
+    <circle cx="25" cy="15" r="7" fill="#FFC3A1"/>
+    <path d="M21 15h8" stroke="#472D2D" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+</svg>

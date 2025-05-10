@@ -1,0 +1,16 @@
+<svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circular background -->
+  <circle cx="30" cy="30" r="30" fill="#472D2D"/>
+  
+  <!-- Bubble Tea Cup -->
+  <rect x="18" y="15" width="24" height="30" rx="3" fill="#FFC3A1"/>
+  <rect x="18" y="45" width="24" height="3" rx="1" fill="#A27B5C"/>
+  <rect x="29" y="5" width="2" height="10" fill="#DCD7C9"/>
+  
+  <!-- Boba pearls -->
+  <circle cx="23" cy="40" r="2" fill="#472D2D"/>
+  <circle cx="29" cy="42" r="2" fill="#472D2D"/>
+  <circle cx="35" cy="39" r="2" fill="#472D2D"/>
+  <circle cx="26" cy="35" r="2" fill="#472D2D"/>
+  <circle cx="32" cy="36" r="2" fill="#472D2D"/>
+</svg>
