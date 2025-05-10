@@ -79,4 +79,23 @@
   <!-- Product Counter -->
   <rect x="240" y="650" width="320" height="50" fill="white" stroke="#DCD7C9" stroke-width="2" rx="25" ry="25"/>
   <circle cx="265" cy="675" r="15" fill="#FFC3A1"/>
-  <text x
+  <text x="265" y="680" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#472D2D">-</text>
+  
+  <text x="400" y="680" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#472D2D">1</text>
+  
+  <circle cx="535" cy="675" r="15" fill="#FFC3A1"/>
+  <text x="535" y="680" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#472D2D">+</text>
+  
+  <!-- Add to Cart Button -->
+  <rect x="240" y="720" width="320" height="60" rx="30" ry="30" fill="#A27B5C"/>
+  <text x="400" y="760" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="white">Add to Cart - Rp 33.000</text>
+  
+  <!-- Recommendations Section -->
+  <text x="240" y="820" font-family="Arial" font-size="18" font-weight="bold" fill="#472D2D">You May Also Like</text>
+  
+  <!-- Recommendation Items -->
+  <rect x="240" y="840" width="150" height="130" rx="10" ry="10" fill="#DCD7C9"/>
+  <rect x="410" y="840" width="150" height="130" rx="10" ry="10" fill="#DCD7C9"/>
+  <rect x="580" y="840" width="150" height="130" rx="10" ry="10" fill="#DCD7C9"/>
+  <rect x="750" y="840" width="150" height="130" rx="10" ry="10" fill="#DCD7C9"/>
+</svg>
