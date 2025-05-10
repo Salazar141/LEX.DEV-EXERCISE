@@ -1,0 +1,50 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="500" fill="#f8f8f8" />
+  
+  <!-- Header -->
+  <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" fill="#333" font-weight="bold">Form Error States Examples</text>
+  
+  <!-- Valid Field Example -->
+  <rect x="100" y="70" width="280" height="80" fill="white" stroke="#ddd" stroke-width="1" rx="4" />
+  <text x="100" y="60" font-family="Arial" font-size="14" fill="#555">Valid Field Example</text>
+  <rect x="110" y="90" width="260" height="40" fill="#f5f5f5" stroke="#4CAF50" stroke-width="2" rx="4" />
+  <text x="120" y="115" font-family="Arial" font-size="14" fill="#333">John Doe</text>
+  <text x="100" y="145" font-family="Arial" font-size="12" fill="#4CAF50">✓ Valid input</text>
+  
+  <!-- Error Field Example 1 -->
+  <rect x="420" y="70" width="280" height="80" fill="white" stroke="#ddd" stroke-width="1" rx="4" />
+  <text x="420" y="60" font-family="Arial" font-size="14" fill="#555">Error Field Example - Empty</text>
+  <rect x="430" y="90" width="260" height="40" fill="#f5f5f5" stroke="#e74c3c" stroke-width="2" rx="4" />
+  <text x="440" y="115" font-family="Arial" font-size="14" fill="#999"></text>
+  <text x="420" y="145" font-family="Arial" font-size="12" fill="#e74c3c">✗ Nama lengkap harus diisi</text>
+  
+  <!-- Error Field Example 2 -->
+  <rect x="100" y="180" width="280" height="80" fill="white" stroke="#ddd" stroke-width="1" rx="4" />
+  <text x="100" y="170" font-family="Arial" font-size="14" fill="#555">Error Field Example - Invalid Email</text>
+  <rect x="110" y="200" width="260" height="40" fill="#f5f5f5" stroke="#e74c3c" stroke-width="2" rx="4" />
+  <text x="120" y="225" font-family="Arial" font-size="14" fill="#333">john.doe@</text>
+  <text x="100" y="255" font-family="Arial" font-size="12" fill="#e74c3c">✗ Format email tidak valid</text>
+  
+  <!-- Error Field Example 3 -->
+  <rect x="420" y="180" width="280" height="80" fill="white" stroke="#ddd" stroke-width="1" rx="4" />
+  <text x="420" y="170" font-family="Arial" font-size="14" fill="#555">Error Field Example - Wrong Format</text>
+  <rect x="430" y="200" width="260" height="40" fill="#f5f5f5" stroke="#e74c3c" stroke-width="2" rx="4" />
+  <text x="440" y="225" font-family="Arial" font-size="14" fill="#333">1234567</text>
+  <text x="420" y="255" font-family="Arial" font-size="12" fill="#e74c3c">✗ Nomor telepon harus diawali 0, 62, atau +62</text>
+  
+  <!-- Form Submit Error Example -->
+  <rect x="100" y="290" width="600" height="80" fill="#FFECEC" stroke="#e74c3c" stroke-width="1" rx="8" />
+  <text x="130" y="335" font-family="Arial" font-size="14" fill="#e74c3c" font-weight="bold">Form memiliki error. Mohon periksa kembali isian Anda.</text>
+  
+  <!-- Disabled Submit Button -->
+  <rect x="100" y="400" width="280" height="50" fill="#F9C5D5" rx="25" opacity="0.5" />
+  <text x="240" y="430" font-family="Arial" font-size="16" text-anchor="middle" fill="#333" font-weight="bold">Submit Pre-Order (Disabled)</text>
+  
+  <!-- Enabled Submit Button -->
+  <rect x="420" y="400" width="280" height="50" fill="#F9C5D5" rx="25" />
+  <text x="560" y="430" font-family="Arial" font-size="16" text-anchor="middle" fill="#333" font-weight="bold">Submit Pre-Order (Enabled)</text>
+  
+  <!-- Note -->
+  <text x="400" y="480" font-family="Arial" font-size="12" text-anchor="middle" fill="#666" font-style="italic">Submit button is disabled until all required fields are valid</text>
+</svg>
