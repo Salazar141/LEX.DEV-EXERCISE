@@ -71,6 +71,13 @@ Pilih salah satu stack yang kamu kuasai:
 ## ⏳ Estimasi Waktu
 4–8 jam (tergantung familiaritas dengan teknologi yang dipilih)
 
+##📖Panduan, Dokumentasi, Resources dan Asset
+    
+      exercises/backend/resources /basic/api-specification.txt    - API Specification/Documentation
+      exercises/backend/resources /basic/database-schema.mermaid  - Mockup Database
+      exercises/backend/resources /basic/sample-data.json         - Dataset Awal
+---
+
 ## 💡 Contoh Output
 
 ```json
