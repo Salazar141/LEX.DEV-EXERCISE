@@ -40,6 +40,14 @@ Tim LEX DEV mendapatkan klien UMKM minuman boba lokal bernama **BobaKu**, yang s
 ### ⏱ Estimasi Waktu
 5–7 jam
 
+### 📖Panduan, Dokumentasi, Resources dan Asset
+      exercises/frontend/resources/basic/bobaku-assets-list.md        -list asset web bobaku
+      exercises/frontend/resources/basic/bobaku-landing-page-spec.md  -min spesifikasi halaman web bobaku
+      exercises/frontend/resources/basic/bobaku-style-guide.md        -panduan style web bobaku
+      exercises/frontend/resources/basic/bobaku-wireframe.svg         -sketsa wifeframe web bobaku dari tim UI/UX
+      exercises/frontend/resources/basic/images/landing_page_template -contoh praktis code
+      exercises/frontend/resources/basic/images/                      -resourse dan asset yg diperlukan(skets)
+
 ---
 
 ## 🎯 [Level 2] Menu Gallery Interaktif
@@ -78,6 +86,10 @@ BobaKu mendapat feedback bahwa pelanggan ingin melihat menu mereka secara visual
 ### ⏱ Estimasi Waktu
 3–5 jam
 
+### 📖Panduan, Dokumentasi, Resources dan Asset
+      exercises/frontend/resources/basic/bobaku-products.json  -file json untuk web bobaku
+      exercises/frontend/resources/basic/gallery-wireframe.svg -wireframe untuk gallery page bobaku web dari tim ui/ux
+      exercises/frontend/resources/basic/modal-wireframe.svg   -weireframe untuk modal frame pada gallery page
 ---
 
 ## 🎯 [Level 3] Form Order Validasi
