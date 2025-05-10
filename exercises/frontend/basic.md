@@ -4,7 +4,7 @@ Level ini cocok untuk kamu yang baru belajar frontend, ingin membangun pondasi k
 
 ---
 
-## 🎯 [Latihan 1] Rebuild Landing Page "BobaKu"
+## 🎯 [Level 1] Rebuild Landing Page "BobaKu"
 
 ### 🗂 Konteks Kasus
 Tim LEX DEV mendapatkan klien UMKM minuman boba lokal bernama **BobaKu**, yang sedang berusaha meningkatkan brand presence mereka secara online. Pemilik BobaKu ingin bersaing dengan brand-brand besar dengan memiliki landing page yang menarik dan profesional yang dapat memperkenalkan brand story mereka, menyoroti menu signature, dan meningkatkan penjualan. Tim UI/UX telah memberikan desain yang simpel namun menarik untuk menggambarkan cita rasa unik BobaKu.
@@ -42,7 +42,7 @@ Tim LEX DEV mendapatkan klien UMKM minuman boba lokal bernama **BobaKu**, yang s
 
 ---
 
-## 🎯 [Latihan 2] Menu Gallery Interaktif
+## 🎯 [Level 2] Menu Gallery Interaktif
 
 ### 🗂 Konteks Kasus
 BobaKu mendapat feedback bahwa pelanggan ingin melihat menu mereka secara visual sebelum berkunjung. Mereka membutuhkan gallery menu interaktif yang memungkinkan pelanggan melihat detail setiap minuman, filtering berdasarkan kategori (signature, classic, seasonal), dan informasi tambahan (level gula, topping).
@@ -80,7 +80,7 @@ BobaKu mendapat feedback bahwa pelanggan ingin melihat menu mereka secara visual
 
 ---
 
-## 🎯 [Latihan 3] Form Order Validasi
+## 🎯 [Level 3] Form Order Validasi
 
 ### 🗂 Konteks Kasus
 BobaKu ingin menambahkan form pre-order sederhana di website mereka untuk acara dan pesanan khusus. Form ini perlu validasi yang baik untuk memastikan data yang masuk berkualitas dan mencegah spam.
