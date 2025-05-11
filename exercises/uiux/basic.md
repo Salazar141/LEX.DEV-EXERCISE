@@ -95,6 +95,7 @@ Sebagai UI/UX Designer baru di tim BobaKu, kamu ditugaskan untuk membuat wirefra
 - [Figma Wireframe Kit](https://www.figma.com/community/file/858591361207466500)
 - [Wireframe.cc](https://wireframe.cc/) - Online wireframing tool
 - [Mobbin](https://mobbin.com/browse/ios/apps?sort=publishedAt-desc) - Mobile design patterns library
+- [Penpot](https://penpot.app/) -design wireframe and prototipe app
 
 ---
 
@@ -108,15 +109,6 @@ Unggah:
 - File PDF wireframe
 - Screenshot PNG/JPG (jika diperlukan)
 - Dokumen singkat (opsional) tentang proses dan keputusan desain
-
----
-
-## 💬 Contoh Feedback yang Diharapkan
-Setelah pengumpulan, mentor akan memberikan feedback tentang:
-- Kejelasan alur informasi
-- Konsistensi layout dan proporsi
-- Kesesuaian dengan prinsip UX
-- Potensi pengembangan ke level berikutnya
 
 ---
 
