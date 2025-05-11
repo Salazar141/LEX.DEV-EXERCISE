@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 390 844" width="390" height="844">
+  <!-- Phone Frame -->
+  <rect x="0" y="0" width="390" height="844" rx="40" ry="40" fill="#F5F5F5" stroke="#DDDDDD" stroke-width="2"/>
+  
+  <!-- Status Bar -->
+  <rect x="0" y="0" width="390" height="44" fill="#FFFFFF"/>
+  <text x="40" y="25" font-family="Arial" font-size="14" fill="#333333">9:41</text>
+  <text x="330" y="25" font-family="Arial" font-size="14" fill="#333333">📶 🔋</text>
+  
+  <!-- Header -->
+  <rect x="0" y="44" width="390" height="60" fill="#FFFFFF"/>
+  <text x="195" y="80" font-family="Arial" font-weight="bold" font-size="18" fill="#472D2D" text-anchor="middle">My Profile</text>
+  <text x="355" y="80" font-family="Arial" font-size="16" fill="#A27B5C">Edit</text>
+  
+  <!-- Profile Info -->
+  <rect x="16" y="114" width="358" height="150" rx="12" ry="12" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"/>
+  <circle cx="80" cy="160" r="40" fill="#DDDDDD"/>
+  <text x="80" y="165" font-family="Arial" font-size="24" fill="#999999" text-anchor="middle">👤</text>
+  
+  <text x="145" y="145" font-family="Arial" font-weight="bold" font-size="18" fill="#333333">Maya Setiawan</text>
+  <text x="145" y="165" font-family="Arial" font-size="14" fill="#666666">maya@example.com</text>
+  <text x="145" y="185" font-family="Arial" font-size="14" fill="#666666">+62 812-3456-7890</text>
+  
+  <!-- Bobaku Points -->
+  <rect x="40" y="210" width="310" height="40" rx="20" ry="20" fill="#FFC3A1" opacity="0.4"/>
+  <text x="70" y="235" font-family="Arial" font-weight="bold" font-size="16" fill="#472D2D">BobaKu Points:</text>
+  <text x="320" y="235" font-family="Arial" font-weight="bold" font-size="18" fill="#472D2D" text-anchor="end">750 pts</text>
+  
+  <!-- Order History -->
+  <text x="20" y="290" font-family="Arial" font-weight="bold" font-size="16" fill="#333333">Order History</text>
+  <text x="350" y="290" font-family="Arial" font-size="14" fill="#A27B5C">See All</text>
+  
+  <rect x="16" y="300" width="358" height="90" rx="8" ry="8" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"/>
+  <rect x="26" y="310" width="70" height="70" rx="6" ry="6" fill="#DDDDDD"/>
+  <text x="61" y="345" font-family="Arial" font-size="12" fill="#999999" text-anchor="middle">Image</text>
+  <text x="106" y="325" font-family="Arial" font-weight="bold" font-size="14" fill="#333333">Brown Sugar Boba</text>
+  <text x="106" y="345" font-family="Arial" font-size="12" fill="#666666">Qty: 1 | 10 May 2025</text>
+  <text x="106" y="365" font-family="Arial" font-weight="bold" font-size="12" fill="#472D2D">Rp 25.000</text>
+  <rect x="300" y="325" width="60" height="24" rx="12" ry="12" fill="#A27B5C" opacity="0.2"/>
+  <text x="330" y="340" font-family="Arial" font-size="10" fill="#A27B5C" text-anchor="middle">Completed</text>
+  <text x="330" y="365" font-family="Arial" font-size="12" fill="#666666" text-anchor="middle">Re-order</text>
+  
+  <rect x="16" y="395" width="358" height="90" rx="8" ry="8" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"/>
+  <rect x="26" y="405" width="70" height="70" rx="6" ry="6" fill="#DDDDDD"/>
+  <text x="61" y="440" font-family="Arial" font-size="12" fill="#999999" text-anchor="middle">Image</text>
+  <text x="106" y="420" font-family="Arial" font-weight="bold" font-size="14" fill="#333333">Taro Milk Tea</text>
+  <text x="106" y="440" font-family="Arial" font-size="12" fill="#666666">Qty: 2 | 7 May 2025</text>
+  <text x="106" y="460" font-family="Arial" font-weight="bold" font-size="12" fill="#472D2D">Rp 56.000</text>
+  <rect x="300" y="420" width="60" height="24" rx="12" ry="12" fill="#A27B5C" opacity="0.2"/>
+  <text x="330" y="435" font-family="Arial" font-size="10" fill="#A27B5C" text-anchor="middle">Completed</text>
+  <text x="330" y="460" font-family="Arial" font-size="12" fill="#666666" text-anchor="middle">Re-order</text>
+  
+  <!-- Saved Payment Methods -->
+  <text x="20" y="520" font-family="Arial" font-weight="bold" font-size="16" fill="#333333">Payment Methods</text>
+  <text x="350" y="520" font-family="Arial" font-size="14" fill="#A27B5C">Add New</text>
+  
+  <rect x="16" y="530" width="358" height="70" rx="8" ry="8" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"/>
+  <rect x="26" y="545" width="40" height="40" rx="6" ry="6" fill="#DDDDDD"/>
+  <text x="46" y="565" font-family="Arial" font-size="12" fill="#999999" text-anchor="middle">💳</text>
+  <text x="80" y="555" font-family="Arial" font-weight="bold" font-size="14" fill="#333333">•••• •••• •••• 5678</text>
+  <text x="80" y="575" font-family="Arial" font-size="12" fill="#666666">Visa - Expires 08/27</text>
+  <rect x="320" y="550" width="40" height="20" rx="10" ry="10" fill="#472D2D" opacity="0.2"/>
+  <text x="340" y="563" font-family="Arial" font-size="10" fill="#472D2D" text-anchor="middle">Default</text>
+  
+  <rect x="16" y="605" width="358" height="70" rx="8" ry="8" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"/>
+  <rect x="26" y="620" width="40" height="40" rx="6" ry="6" fill="#DDDDDD"/>
+  <text x="46" y="640" font-family="Arial" font-size="12" fill="#999999" text-anchor="middle">💳</text>
+  <text x="80" y="630" font-family="Arial" font-weight="bold" font-size="14" fill="#333333">•••• •••• •••• 1234</text>
+  <text x="80" y="650" font-family="Arial" font-size="12" fill="#666666">Mastercard - Expires 05/26</text>
+  
+  <!-- Address -->
+  <text x="20" y="705" font-family="Arial" font-weight="bold" font-size="16" fill="#333333">Saved Addresses</text>
+  <text x="350" y="705" font-family="Arial" font-size="14" fill="#A27B5C">Add New</text>
+  
+  <rect x="16" y="715" width="358" height="70" rx="8" ry="8" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"/>
+  <rect x="26" y="730" width="40" height="40" rx="6" ry="6" fill="#DDDDDD"/>
+  <text x="46" y="750" font-family="Arial" font-size="12" fill="#999999" text-anchor="middle">📍</text>
+  <text x="80" y="740" font-family="Arial" font-weight="bold" font-size="14" fill="#333333">Home</text>
+  <text x="80" y="760" font-family="Arial" font-size="12" fill="#666666">Jl. Sudirman No. 123, Jakarta</text>
+  <rect x="320" y="735" width="40" height="20" rx="10" ry="10" fill="#472D2D" opacity="0.2"/>
+  <text x="340" y="748" font-family="Arial" font-size="10" fill="#472D2D" text-anchor="middle">Default</text>
+  
+  <!-- Bottom Navigation -->
+  <rect x="0" y="796" width="390" height="48" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"/>
+  
+  <circle cx="50" cy="820" r="18" fill="#FFFFFF"/>
+  <text x="50" y="824" font-family="Arial" font-size="10" fill="#666666" text-anchor="middle">🏠</text>
+  <text x="50" y="842" font-family="Arial" font-size="10" fill="#666666" text-anchor="middle">Home</text>
+  
+  <circle cx="130" cy="820" r="18" fill="#FFFFFF"/>
+  <text x="130" y="824" font-family="Arial" font-size="10" fill="#666666" text-anchor="middle">🔍</text>
+  <text x="130" y="842" font-family="Arial" font-size="10" fill="#666666" text-anchor="middle">Explore</text>
+  
+  <circle cx="210" cy="820" r="18" fill="#FFFFFF"/>
+  <text x="210" y="824" font-family="Arial" font-size="10" fill="#666666" text-anchor="middle">🛒</text>
+  <text x="210" y="842" font-family="Arial" font-size="10" fill="#666666" text-anchor="middle">Orders</text>
+  
+  <circle cx="290" cy="820" r="18" fill="#FFC3A1" opacity="0.4"/>
+  <text x="290" y="824" font-family="Arial" font-size="10" fill="#472D2D" text-anchor="middle">👤</text>
+  <text x="290" y="842" font-family="Arial" font-size="10" fill="#472D2D" text-anchor="middle">Profile</text>
+  
+  <circle cx="350" cy="820" r="18" fill="#FFFFFF"/>
+  <text x="350" y="824" font-family="Arial" font-size="10" fill="#666666" text-anchor="middle">⚙️</text>
+  <text x="350" y="842" font-family="Arial" font-size="10" fill="#666666" text-anchor="middle">More</text>
+  
+  <!-- Annotations -->
+  <circle cx="360" cy="80" r="20" fill="#472D2D" opacity="0.2"/>
+  <text x="360" y="85" font-family="Arial" font-weight="bold" font-size="12" fill="#FFFFFF" text-anchor="middle">1</text>
+  
+  <circle cx="360" cy="160" r="20" fill="#472D2D" opacity="0.2"/>
+  <text x="360" y="165" font-family="Arial" font-weight="bold" font-size="12" fill="#FFFFFF" text-anchor="middle">2</text>
+  
+  <circle cx="360" cy="235" r="20" fill="#472D2D" opacity="0.2"/>
+  <text x="360" y="240" font-family="Arial" font-weight="bold" font-size="12" fill="#FFFFFF" text-anchor="middle">3</text>
+  
+  <circle cx="360" cy="345" r="20" fill="#472D2D" opacity="0.2"/>
+  <text x="360" y="350" font-family="Arial" font-weight="bold" font-size="12" fill="#FFFFFF" text-anchor="middle">4</text>
+  
+  <circle cx="360" cy="550" r="20" fill="#472D2D" opacity="0.2"/>
+  <text x="360" y="555" font-family="Arial" font-weight="bold" font-size="12" fill="#FFFFFF" text-anchor="middle">5</text>
+  
+  <circle cx="360" cy="730" r="20" fill="#472D2D" opacity="0.2"/>
+  <text x="360" y="735" font-family="Arial" font-weight="bold" font-size="12" fill="#FFFFFF" text-anchor="middle">6</text>
+  
+  <circle cx="290" cy="820" r="20" fill="#472D2D" opacity="0.2"/>
+  <text x="290" y="825" font-family="Arial" font-weight="bold" font-size="12" fill="#FFFFFF" text-anchor="middle">7</text>
+</svg>
