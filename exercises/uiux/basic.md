@@ -61,6 +61,9 @@ Sebagai UI/UX Designer baru di tim BobaKu, kamu ditugaskan untuk membuat wirefra
 ## ⏳ Estimasi Waktu
 `2–4 jam` (tergantung kompleksitas dan pengalaman)
 
+## 📖 panduan, Resources dan Asset   
+    exercises/uiux/resources/basic
+
 ---
 
 ## 💡 Panduan Pengerjaan
