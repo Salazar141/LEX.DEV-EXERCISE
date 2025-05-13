@@ -55,7 +55,7 @@ Sebagai UI/UX Designer baru di tim BobaKu, kamu ditugaskan untuk membuat wirefra
 - **Adobe XD** (alternatif) - [Download](https://www.adobe.com/products/xd.html)
 - **Balsamiq** (untuk pure wireframing) - [Download](https://balsamiq.com/wireframes/desktop/)
 - **Whimsical** (untuk wireframing cepat) - [Website](https://whimsical.com/)
-
+- **Penpot** (WIreframing app ringan dan simple cocok untuk pemula) - [https://penpot.app/]
 ---
 
 ## ⏳ Estimasi Waktu
@@ -83,16 +83,17 @@ Sebagai UI/UX Designer baru di tim BobaKu, kamu ditugaskan untuk membuat wirefra
 - [Information Architecture Basics](https://www.usability.gov/what-and-why/information-architecture.html) - Usability.gov
 - [Mobile Design Best Practices](https://www.nngroup.com/articles/mobile-ux-design/) - Nielsen Norman Group
 - [UI Design Patterns](https://ui-patterns.com/patterns) - UI Patterns
+- [UX Design Roadmap](https://roadmap.sh/ux-design)- UX Desgin Roadmap Practice 
 
 ### Video Tutorials
-- [Figma Tutorial for Beginners](https://www.youtube.com/watch?v=FTFaQWZBqQ8) (24:27) - Figma
+- [Figma Tutorial for Beginners](https://youtu.be/FTFaQWZBqQ8?si=i0_mqOlrUgIoMe5B) (24:27) - Figma
 - [UI/UX Design Process from Wireframe to UI](https://www.youtube.com/watch?v=c9Wg6Cb_YlU) (18:34) - DesignCourse
 - [Mobile App Wireframing Tutorial](https://www.youtube.com/watch?v=qpH7-KFWZRI) (16:08) - AJ&Smart
 - [How to Make Wireframes for Mobile Apps](https://www.youtube.com/watch?v=RFv53AxxQAo) (10:19) - CareerFoundry
 - [Wireframing Tips and Best Practices](https://www.youtube.com/watch?v=8-vTd7GRk-w) (21:46) - Flux
 
 ### Design Systems & Kits
-- [Figma Wireframe Kit](https://www.figma.com/community/file/858591361207466500)
+- [Figma Wireframe Kit](https://www.figma.com/community/file/858591361207466500) - kit standar wireframe
 - [Wireframe.cc](https://wireframe.cc/) - Online wireframing tool
 - [Mobbin](https://mobbin.com/browse/ios/apps?sort=publishedAt-desc) - Mobile design patterns library
 - [Penpot](https://penpot.app/) -design wireframe and prototipe app
