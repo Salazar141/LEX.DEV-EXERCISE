@@ -4,7 +4,7 @@ Selamat datang di repositori Latihan Development LEX DEV! Repositori ini berisi 
 
 ## 📋 Gambaran Umum
 
-Repositori ini menyediakan serangkaian latihan komprehensif yang dikategorikan berdasarkan peran dan tingkat keterampilan, memungkinkan peserta untuk berkembang dari konsep dasar hingga lanjutan dalam spesialisasi yang mereka pilih. Setiap latihan dirancang berdasarkan skenario realistis, terutama menggunakan "BobaKu" - bisnis minuman boba fiksi - sebagai studi kasus.
+Repositori ini menyediakan serangkaian latihan komprehensif yang dikategorikan berdasarkan peran dan tingkat keterampilan, memungkinkan peserta untuk berkembang dari konsep dasar hingga lanjutan dalam spesialisasi yang mereka pilih, Setiap latihan dirancang berdasarkan skenario realistis.
 
 ## 🎯 Jalur Peran yang Tersedia
 
