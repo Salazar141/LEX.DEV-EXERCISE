@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BobaKu</title>
+  <link rel="stylesheet" href="meningkePalak.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Modal Keranjang -->
+<div id="cartModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span onclick="closeCart()" class="close">&times;</span>
+    <h3>Isi Keranjang Kamu</h3>
+    <div id="cartItems"></div>
+    <div id="cartTotal"></div>
+
+    <!-- Metode Pembayaran -->
+    <div class="payment-section">
+      <h4>Metode Pembayaran </h4>
+      <label><input type="radio" name="payment" value="COD" checked /> COD</label><br/>
+      <label><input type="radio" name="payment" value="Debit" /> Debit</label>
+    </div>
+    <button class="order-button" onclick="checkoutCart()">Checkout </button>
+  </div>
+</div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">BobaKu</div>
+    <ul class="nav-links">
+      <li>
+  <button onclick="openCart()" style="background: none; border: none; cursor: pointer;">
+    <img src="https://images.icon-icons.com/2368/PNG/512/shopping_cart_icon_143698.png" alt="Keranjang" style="width: 24px; vertical-align: middle;" />
+  </button>
+</li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#branches">Cabang</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1>BobaKu</h1>
+      <p>your favorite bubble tea with extra cuteness!</p>
+      <img src="https://raw.githubusercontent.com/APltone141/LEX.DEV-EXERCISE/225abc6e1a78cb7b821e555472a5cc8e868faa08/exercises/frontend/resources/basic/images/bobaku-favicon.svg" alt="Logo BobaKu" class="logo-image"> 
+      <a href="#menu" class="btn">ORDER NOW</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section">
+    <h2 class="section-title">Menu Favorit Kami</h2>
+    <div class="underline"></div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img class="product-image" src="https://teakandthyme-com.translate.goog/wp-content/uploads/2022/11/brown-sugar-milk-tea-DSC_0462-1600-1025x1536.jpg?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=imgs" alt="Boba 1" />
+        <div class="product-info">
+          <h3>Brown Sugar Milk Tea</h3>
+          <p>Rp 25.000</p>
+          <button class="order-button" data-name="Boba Brown Sugar" data-price="25000" onclick="openOrderPopup(this)">🛒 ORDER</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-image" src="https://tyberrymuch-com.translate.goog/wp-content/uploads/2022/07/real-taro-milk-bubble-tea-index-800x800.jpg?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=imgs" alt="Boba 2" />
+        <div class="product-info">
+          <h3>Taro Milk Tea</h3>
+          <p>Rp 23.000</p>
+          <button class="order-button" data-name="Taro Milk Tea" data-price="23000" onclick="openOrderPopup(this)">🛒 ORDER</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-image" src="https://cdn-loveandlemons-com.translate.goog/wp-content/uploads/2023/06/iced-matcha-latte-recipe.jpg?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=imgs" alt="Boba 3" />
+        <div class="product-info">
+          <h3>Matcha Latte</h3>
+          <p>Rp 27.000</p>
+          <button class="order-button" data-name="Matcha Latte" data-price="27000" onclick="openOrderPopup(this)">🛒 ORDER</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-image" src="https://media-cdn.tripadvisor.com/media/photo-s/1a/32/fd/63/classic-milk-tea.jpg" alt="Boba 4" />
+        <div class="product-info">
+          <h3>Clasic Milk Tea</h3>
+          <p>Rp 24.000</p>
+          <button class="order-button" data-name="Clasic Milk Tea" data-price="24000" onclick="openOrderPopup(this)">🛒 ORDER</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-image" src="https://thai--foodie-com.translate.goog/wp-content/uploads/2024/09/thai-milk-tea.jpg?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=imgs" alt="Boba 5" />
+        <div class="product-info">
+          <h3>Thai Tea</h3>
+          <p>Rp 22.000</p>
+          <button class="order-button" data-name="Thai Tea" data-price="22000" onclick="openOrderPopup(this)">🛒 ORDER</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-image" src="https://myveganminimalist-com.translate.goog/wp-content/uploads/2022/02/Chocolate-Bubble-Milk-Tea-2-1024x1536.jpg?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=imgs" alt="Boba 6" />
+        <div class="product-info">
+          <h3>Chocolate Boba</h3>
+          <p>Rp 26.000</p>
+          <button class="order-button" data-name="Chocolate Boba" data-price="26000" onclick="openOrderPopup(this)">🛒 ORDER</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOvJOrYyUhoKFGV_tmPWxufYNcr9GW1OFV4HzY7Y-ZGDg7QN-GSl21JIJckB6F1XjlRl4&usqp=CAU" alt="Boba 7" />
+        <div class="product-info">
+          <h3>Avocado Boba</h3>
+          <p>Rp 28.000</p>
+          <button class="order-button" data-name="Avocado Boba" data-price="28000" onclick="openOrderPopup(this)">🛒 ORDER</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzCpOXkLXFn2IhOQ2vIFDKq8Oi1w0wF3j59Q&s" alt="Boba 8" />
+        <div class="product-info">
+          <h3>Coffee Boba</h3>
+          <p>Rp 29.000</p>
+          <button class="order-button" data-name="Coffee Boba" data-price="29000" onclick="openOrderPopup(this)">🛒 ORDER</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup Modal (Order + Topping + Payment) -->
+  <div class="modal" id="orderModal" style="display:none;">
+    <div class="modal-content">
+      <span class="close" onclick="closeOrderPopup()">&times;</span>
+      <h2 id="modalProductName">Nama Produk</h2>
+
+      <!-- Quantity -->
+      <div class="quantity-controls">
+        <button class="qty-btn" onclick="decreaseQty()">-</button>
+        <input type="number" id="quantityInput" value="1" min="1" />
+        <button class="qty-btn" onclick="increaseQty()">+</button>
+      </div>
+
+      <!-- Topping -->
+      <div class="topping-section">
+        <h4>Pilih Topping </h4>
+        <label><input type="checkbox" class="topping-checkbox" data-name="Coklat" data-price="3000" /> Coklat (+Rp3.000)</label><br />
+        <label><input type="checkbox" class="topping-checkbox" data-name="Keju" data-price="4000" /> Keju (+Rp4.000)</label><br />
+        <label><input type="checkbox" class="topping-checkbox" data-name="Boba" data-price="5000" /> Boba (+Rp5.000)</label><br />
+        <label><input type="checkbox" class="topping-checkbox" data-name="Oreo" data-price="3500" /> Oreo (+Rp3.500)</label>
+      </div>
+
+      <!-- Payment Method -->
+      <div class="payment-section">
+        <h4>Metode Pembayaran </h4>
+        <label><input type="radio" name="paymentMethod" value="COD" checked /> COD (Bayar di tempat)</label><br />
+        <label><input type="radio" name="paymentMethod" value="Debit" /> Debit (Transfer Bank)</label>
+      </div>
+
+      <!-- Actions -->
+      <div class="modal-actions">
+        <button class="modal-confirm" onclick="addToCart()">Masukkan ke Keranjang </button>
+        <button class="modal-confirm" onclick="checkoutNow()">Bayar Sekarang </button>
+        <button class="modal-cancel" onclick="closeOrderPopup()">Batal </button>
+      </div>
+    </div>
+  </div>
+
+<!-- Cart Modal -->
+ <div class="modal" id="cartModal" style="display:none;">
+    <div class="modal-content">
+      <span class="close" onclick="closeCart()">&times;</span>
+      <h3>Isi Keranjang Kamu</h3>
+      <div id="cartItems"></div>
+      <div id="cartTotal"></div>
+      <div id="cartPaymentMethod"></div>
+      <button onclick="checkoutCart()">Checkout </button>
+    </div>
+  </div>
+
+  <!-- About Us -->
+  <section id="about" class="about-section">
+    <h2 class="section-title">Tentang Kami</h2>
+    <p class="about-text">
+      Kami adalah pecinta boba yang ingin menyebarkan kebahagiaan lewat setiap tegukan. BobaKu hadir untuk memberikan rasa yang otentik dengan tampilan yang imut~ 💖
+    </p>
+    <a href="#" class="btn">LEARN MORE</a>
+  </section>
+
+  <!-- Cabang -->
+  <section id="branches" class="branch-section">
+    <h2 class="section-title">Cabang Kami</h2>
+    <div class="underline"></div>
+    <div class="branch-grid">
+      <div class="branch-card">
+        <img src="https://axa.co.id/documents/1127000/1127127/149+-+5-fakta-unik-kota-jakarta-yang-jarang-diketahui-min.jpg/233fcabe-d0ae-e1b4-f9cc-bdde6236af94?t=1621492256886" alt="Cabang Jakarta">
+        <div class="branch-info">
+          <h3>Jakarta</h3>
+          <p>Jl. Senopati No.12, Jakarta Selatan</p>
+        </div>
+      </div>
+      <div class="branch-card">
+        <img src="https://cove-blog-id.sgp1.cdn.digitaloceanspaces.com/cove-blog-id/2023/07/Daerah-Bandung-yang-Terkenal.webp" alt="Cabang Bandung">
+        <div class="branch-info">
+          <h3>Bandung</h3>
+          <p>Jl. Dago No.45, Bandung</p>
+        </div>
+      </div>
+      <div class="branch-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTM7SyIoo9zZLt4HHw9QAFkAI-7_Z28nKtpQ&s" alt="Cabang Surabaya">
+        <div class="branch-info">
+          <h3>Surabaya</h3>
+          <p>Jl. Tunjungan No.10, Surabaya</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer class="footer">
+    <img src="https://raw.githubusercontent.com/APltone141/LEX.DEV-EXERCISE/225abc6e1a78cb7b821e555472a5cc8e868faa08/exercises/frontend/resources/basic/images/bobaku-favicon.svg" alt="Logo BobaKu" class="logo-image">
+    <h1>Hubungi Kami</h1>
+    <p>📞 Contact us: 0812-3456-7890 | 📧 hello@bobaku.id</p>
+    <p>&copy; 2025 BobaKu. All rights reserved </p>
+  </footer>
+  <script src="otak.js"></script>
+</body>
+</html>
