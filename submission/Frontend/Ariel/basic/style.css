@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+
+.logo {
+    display: flex;
+    flex-shrink: 0;
+    border-radius: 50;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+}
+
+.top-header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #4e2c2c;
+    padding: 0px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.search-box {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 20px;
+    align-items: center;
+}
+
+.search-box input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  background-color: #eee;
+  font-size: 16px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.search-box button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  background-color: #eee;
+  border-radius: 0 10px 10px 0;
+  height: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.search-box button img {
+  width: 20px;
+  height: 20px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.nav-bar {
+  background-color: #a77c52;
+}
+
+.nav-bar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-bar li {
+    flex: 1;
+}
+
+.nav-bar a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: #eee;
+    text-decoration: none;
+    font-weight: 500;
+}   
+
+.slider {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    background-color: #eee6d7;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.slides {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.slide {
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+.slide-active {
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    color: #472D2D;
+    border: 2px solid #aaa;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    opacity: 1;
+    background-color: #fff;
+}
+
+.dots {
+    margin-top: 1rem;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.featured-post {
+    background-color: #f9f6f1;
+    padding: 2rem;
+    text-align: center;
+}
+
+.featured-post h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    justify-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* penting untuk buat baris akhir tetap di tengah */
+    gap: 1.5rem; /* agar antar card rapi */
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+.card {
+    background-color: #fefefe;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3 ease;
+    overflow: hidden;
+    justify-items: center;
+    flex: 0 1 200px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 90px;
+    height: 90px;
+    padding: 0;
+    margin-bottom: 0rem;
+}
+
+.card-title {
+    background-color: #fff;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-img {
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.card-info a {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.branch {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    
+}
+
+.branch-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    background-color: #fefefe;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3 ease;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #eee6d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foo-logo {
+    position: relative;
+    border-radius: 50;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 1rem;
+    width: 80px;
+    height: 80px;
+}
+
+.contact {
+    position: relative;
+    width: 90%;
+    margin-top: auto;
+    border-radius: 1rem;
+    text-align: center;
+}
