@@ -1,0 +1,242 @@
+{
+  "sales_data": {
+    "daily": [
+      { "date": "2024-05-01", "revenue": 2500000, "orders": 45, "customers": 38 },
+      { "date": "2024-05-02", "revenue": 3200000, "orders": 58, "customers": 52 },
+      { "date": "2024-05-03", "revenue": 2800000, "orders": 51, "customers": 44 },
+      { "date": "2024-05-04", "revenue": 4100000, "orders": 72, "customers": 65 },
+      { "date": "2024-05-05", "revenue": 4500000, "orders": 81, "customers": 73 },
+      { "date": "2024-05-06", "revenue": 3800000, "orders": 67, "customers": 59 },
+      { "date": "2024-05-07", "revenue": 3600000, "orders": 63, "customers": 56 },
+      { "date": "2024-05-08", "revenue": 2900000, "orders": 52, "customers": 47 },
+      { "date": "2024-05-09", "revenue": 3100000, "orders": 56, "customers": 49 },
+      { "date": "2024-05-10", "revenue": 3400000, "orders": 61, "customers": 54 },
+      { "date": "2024-05-11", "revenue": 4200000, "orders": 75, "customers": 68 },
+      { "date": "2024-05-12", "revenue": 4800000, "orders": 86, "customers": 79 },
+      { "date": "2024-05-13", "revenue": 4000000, "orders": 71, "customers": 63 },
+      { "date": "2024-05-14", "revenue": 3700000, "orders": 66, "customers": 58 },
+      { "date": "2024-05-15", "revenue": 3300000, "orders": 59, "customers": 52 },
+      { "date": "2024-05-16", "revenue": 3500000, "orders": 62, "customers": 55 },
+      { "date": "2024-05-17", "revenue": 3900000, "orders": 69, "customers": 61 },
+      { "date": "2024-05-18", "revenue": 4300000, "orders": 76, "customers": 69 },
+      { "date": "2024-05-19", "revenue": 4600000, "orders": 82, "customers": 74 },
+      { "date": "2024-05-20", "revenue": 4100000, "orders": 73, "customers": 66 },
+      { "date": "2024-05-21", "revenue": 3800000, "orders": 68, "customers": 60 },
+      { "date": "2024-05-22", "revenue": 3200000, "orders": 57, "customers": 51 },
+      { "date": "2024-05-23", "revenue": 3600000, "orders": 64, "customers": 57 },
+      { "date": "2024-05-24", "revenue": 4000000, "orders": 71, "customers": 63 },
+      { "date": "2024-05-25", "revenue": 4400000, "orders": 78, "customers": 70 },
+      { "date": "2024-05-26", "revenue": 4700000, "orders": 84, "customers": 76 }
+    ],
+    "weekly": [
+      { "week": "Week 1", "period": "2024-05-01 to 2024-05-07", "revenue": 24500000, "orders": 437, "customers": 387 },
+      { "week": "Week 2", "period": "2024-05-08 to 2024-05-14", "revenue": 27200000, "orders": 486, "customers": 438 },
+      { "week": "Week 3", "period": "2024-05-15 to 2024-05-21", "revenue": 27500000, "orders": 489, "customers": 446 },
+      { "week": "Week 4", "period": "2024-05-22 to 2024-05-26", "revenue": 19900000, "orders": 354, "customers": 317 }
+    ],
+    "monthly": [
+      { "month": "January", "year": 2024, "revenue": 85000000, "orders": 1520, "customers": 1290 },
+      { "month": "February", "year": 2024, "revenue": 92000000, "orders": 1640, "customers": 1380 },
+      { "month": "March", "year": 2024, "revenue": 88000000, "orders": 1570, "customers": 1320 },
+      { "month": "April", "year": 2024, "revenue": 95000000, "orders": 1690, "customers": 1420 },
+      { "month": "May", "year": 2024, "revenue": 99100000, "orders": 1766, "customers": 1588 }
+    ]
+  },
+  "top_products": [
+    {
+      "id": "P001",
+      "name": "Brown Sugar Milk Tea",
+      "category": "Classic",
+      "total_sold": 1250,
+      "revenue": 31250000,
+      "price": 25000,
+      "image": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400",
+      "growth_percentage": 12.5
+    },
+    {
+      "id": "P002",
+      "name": "Taro Bubble Tea",
+      "category": "Flavored",
+      "total_sold": 980,
+      "revenue": 24500000,
+      "price": 25000,
+      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+      "growth_percentage": 8.3
+    },
+    {
+      "id": "P003",
+      "name": "Matcha Latte with Pearls",
+      "category": "Premium",
+      "total_sold": 750,
+      "revenue": 22500000,
+      "price": 30000,
+      "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=400",
+      "growth_percentage": 15.7
+    },
+    {
+      "id": "P004",
+      "name": "Thai Tea Original",
+      "category": "Classic",
+      "total_sold": 680,
+      "revenue": 17000000,
+      "price": 25000,
+      "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=400",
+      "growth_percentage": 5.2
+    },
+    {
+      "id": "P005",
+      "name": "Cheese Foam Green Tea",
+      "category": "Premium",
+      "total_sold": 520,
+      "revenue": 18200000,
+      "price": 35000,
+      "image": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400",
+      "growth_percentage": 22.1
+    }
+  ],
+  "customer_segments": [
+    {
+      "segment": "Gen Z (18-25)",
+      "count": 1420,
+      "percentage": 35.5,
+      "avg_order_value": 45000,
+      "favorite_category": "Flavored",
+      "color": "#FF6B6B"
+    },
+    {
+      "segment": "Millennials (26-35)",
+      "count": 1280,
+      "percentage": 32.0,
+      "avg_order_value": 52000,
+      "favorite_category": "Premium",
+      "color": "#4ECDC4"
+    },
+    {
+      "segment": "Gen X (36-45)",
+      "count": 880,
+      "percentage": 22.0,
+      "avg_order_value": 38000,
+      "favorite_category": "Classic",
+      "color": "#45B7D1"
+    },
+    {
+      "segment": "Others (46+)",
+      "count": 420,
+      "percentage": 10.5,
+      "avg_order_value": 35000,
+      "favorite_category": "Classic",
+      "color": "#96CEB4"
+    }
+  ],
+  "branch_comparison": [
+    {
+      "branch_id": "BR001",
+      "branch_name": "BobaKu Central Park",
+      "location": "Jakarta Barat",
+      "revenue": 28500000,
+      "orders": 510,
+      "customers": 445,
+      "avg_order_value": 55882,
+      "rating": 4.7,
+      "top_product": "Brown Sugar Milk Tea",
+      "staff_count": 8,
+      "operating_hours": "10:00 - 22:00"
+    },
+    {
+      "branch_id": "BR002", 
+      "branch_name": "BobaKu Grand Indonesia",
+      "location": "Jakarta Pusat",
+      "revenue": 32100000,
+      "orders": 580,
+      "customers": 512,
+      "avg_order_value": 55345,
+      "rating": 4.8,
+      "top_product": "Matcha Latte with Pearls",
+      "staff_count": 10,
+      "operating_hours": "10:00 - 22:00"
+    },
+    {
+      "branch_id": "BR003",
+      "branch_name": "BobaKu Pondok Indah",
+      "location": "Jakarta Selatan", 
+      "revenue": 25800000,
+      "orders": 465,
+      "customers": 398,
+      "avg_order_value": 55484,
+      "rating": 4.6,
+      "top_product": "Taro Bubble Tea",
+      "staff_count": 7,
+      "operating_hours": "10:00 - 21:00"
+    },
+    {
+      "branch_id": "BR004",
+      "branch_name": "BobaKu Kelapa Gading",
+      "location": "Jakarta Utara",
+      "revenue": 22400000,
+      "orders": 405,
+      "customers": 356,
+      "avg_order_value": 55309,
+      "rating": 4.5,
+      "top_product": "Thai Tea Original",
+      "staff_count": 6,
+      "operating_hours": "11:00 - 21:00"
+    },
+    {
+      "branch_id": "BR005",
+      "branch_name": "BobaKu Senayan City",
+      "location": "Jakarta Selatan",
+      "revenue": 29700000,
+      "orders": 535,
+      "customers": 478,
+      "avg_order_value": 55514,
+      "rating": 4.9,
+      "top_product": "Cheese Foam Green Tea",
+      "staff_count": 9,
+      "operating_hours": "10:00 - 22:00"
+    }
+  ],
+  "hourly_traffic": [
+    { "hour": "08:00", "customers": 12, "orders": 8 },
+    { "hour": "09:00", "customers": 25, "orders": 18 },
+    { "hour": "10:00", "customers": 45, "orders": 32 },
+    { "hour": "11:00", "customers": 78, "orders": 65 },
+    { "hour": "12:00", "customers": 125, "orders": 98 },
+    { "hour": "13:00", "customers": 142, "orders": 115 },
+    { "hour": "14:00", "customers": 98, "orders": 78 },
+    { "hour": "15:00", "customers": 85, "orders": 68 },
+    { "hour": "16:00", "customers": 110, "orders": 92 },
+    { "hour": "17:00", "customers": 135, "orders": 112 },
+    { "hour": "18:00", "customers": 156, "orders": 128 },
+    { "hour": "19:00", "customers": 178, "orders": 145 },
+    { "hour": "20:00", "customers": 125, "orders": 102 },
+    { "hour": "21:00", "customers": 85, "orders": 68 },
+    { "hour": "22:00", "customers": 35, "orders": 28 }
+  ],
+  "payment_methods": [
+    { "method": "E-Wallet (GoPay, OVO, DANA)", "count": 1250, "percentage": 52.1, "color": "#00D4AA" },
+    { "method": "Credit/Debit Card", "count": 680, "percentage": 28.3, "color": "#0052CC" },
+    { "method": "Cash", "count": 320, "percentage": 13.3, "color": "#36B37E" },
+    { "method": "Bank Transfer", "count": 150, "percentage": 6.3, "color": "#FF5630" }
+  ],
+  "seasonal_trends": [
+    { "month": "Jan", "iced_drinks": 65, "hot_drinks": 35, "temperature_avg": 26 },
+    { "month": "Feb", "iced_drinks": 70, "hot_drinks": 30, "temperature_avg": 27 },
+    { "month": "Mar", "iced_drinks": 75, "hot_drinks": 25, "temperature_avg": 29 },
+    { "month": "Apr", "iced_drinks": 82, "hot_drinks": 18, "temperature_avg": 31 },
+    { "month": "May", "iced_drinks": 88, "hot_drinks": 12, "temperature_avg": 33 }
+  ],
+  "summary_metrics": {
+    "total_revenue_today": 4700000,
+    "total_orders_today": 84,
+    "total_customers_today": 76,
+    "avg_order_value_today": 55952,
+    "revenue_growth": 8.5,
+    "order_growth": 12.3,
+    "customer_satisfaction": 4.7,
+    "total_active_branches": 5,
+    "total_menu_items": 28,
+    "most_popular_time": "19:00",
+    "busiest_branch": "BobaKu Senayan City",
+    "conversion_rate": 0.89
+  }
+}
