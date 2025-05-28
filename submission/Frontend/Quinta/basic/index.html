@@ -25,7 +25,7 @@
                     <li><a href="#hero">Beranda</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#promo">Promo</a></li>
-                    <li><a href="#order" class="cta-nav">Pesan Antar</a></li>
+                    <li><a href="#preorder" class="cta-nav">Pre-Order</a></li> 
                 </ul>
             </nav>
         </div>
@@ -50,60 +50,19 @@
                         <h3>Paket Duo Hemat</h3>
                         <p>Nikmati 2 varian Bobaku favoritmu (Brown Sugar + Matcha Latte) dengan harga spesial! Cocok buat berdua.</p>
                         <span class="special-price">Rp 45.000 <del>Rp 53.000</del></span>
-                        <a href="#order" class="cta-button small-cta">Pesan Sekarang</a>
+                        <a href="#preorder" class="cta-button small-cta">Pesan Sekarang</a> 
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="menu" class="menu-highlights">
+        <section id="menu" class="menu-gallery-section"> 
             <div class="container">
-                <h2>Pilihan Boba Terpopuler</h2>
-                <div class="menu-grid">
-                    <article class="menu-card">
-                        <img src="https://tse2.mm.bing.net/th?id=OIP.SmBjxQIyHOURjlvXsVF5GQHaF5&pid=Api&P=0&h=180" alt="Brown Sugar Boba Milk">
-                        <div class="menu-card-content">
-                            <h3>Brown Sugar Boba Milk</h3>
-                            <p>Susu segar, gula aren, boba.</p>
-                            <div class="menu-card-footer">
-                                <span class="price">Rp 25.000</span>
-                                <button class="add-to-cart-btn" aria-label="Tambah Brown Sugar Boba Milk">+</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="menu-card">
-                        <img src="https://tse4.mm.bing.net/th?id=OIP.VlN1_vRBnsJuA3nRuQf9zQHaEK&pid=Api&P=0&h=180" alt="Matcha Boba Latte">
-                         <div class="menu-card-content">
-                            <h3>Matcha Boba Latte</h3>
-                            <p>Matcha premium, susu, boba.</p>
-                            <div class="menu-card-footer">
-                                <span class="price">Rp 28.000</span>
-                                <button class="add-to-cart-btn" aria-label="Tambah Matcha Boba Latte">+</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="menu-card">
-                        <img src="https://tse3.mm.bing.net/th?id=OIP.J30kE2MGh-L35HdNYXu1LgHaEJ&pid=Api&P=0&h=180" alt="Taro Boba Delight">
-                        <div class="menu-card-content">
-                            <h3>Taro Boba Delight</h3>
-                            <p>Taro lembut, susu, boba.</p>
-                            <div class="menu-card-footer">
-                                <span class="price">Rp 27.000</span>
-                                <button class="add-to-cart-btn" aria-label="Tambah Taro Boba Delight">+</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="menu-card">
-                        <img src="https://tse4.mm.bing.net/th?id=OIP.aElOogTHCSi--E4twqVPEwHaHa&pid=Api&P=0&h=180" alt="Choco Lava Boba">
-                        <div class="menu-card-content">
-                            <h3>Choco Lava Boba</h3>
-                            <p>Cokelat kental, susu, boba.</p>
-                            <div class="menu-card-footer">
-                                <span class="price">Rp 29.000</span>
-                                <button class="add-to-cart-btn" aria-label="Tambah Choco Lava Boba">+</button>
-                            </div>
-                        </div>
-                    </article>
+                <h2>Menu Bobaku</h2>
+                <div class="filter-container">
+                    <button class="filter-btn active" data-category="all">Semua</button>
+                </div>
+                <div class="menu-grid" id="product-menu-grid">
                 </div>
             </div>
         </section>
@@ -132,17 +91,54 @@
             </div>
         </section>
         
-        <section id="order" class="order-section">
+        <section id="preorder" class="preorder-section"> 
             <div class="container">
-                <h2>Pesan Bobaku Favoritmu!</h2>
-                <p>Mudah dan cepat, nikmati Bobaku di mana saja. Klik untuk memesan melalui aplikasi pilihanmu.</p>
-                <div class="order-buttons">
-                    <a href="#" class="cta-button order-app-button" target="_blank" rel="noopener noreferrer"><i class="fab fa-google-play"></i> GoFood</a>
-                    <a href="#" class="cta-button order-app-button" target="_blank" rel="noopener noreferrer"><i class="fab fa-apple"></i> GrabFood</a>
-                    <a href="https://wa.me/6281200001234?text=Halo%20Bobaku,%20saya%20mau%20pesan%20boba" class="cta-button order-app-button" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                </div>
+                <h2>Form Pre-Order Bobaku</h2>
+                <p>Pesan Bobaku favoritmu untuk diambil atau diantar nanti. Isi form di bawah ini.</p>
+                <form id="preorder-form" class="preorder-form-container" novalidate>
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap <span class="required-asterisk">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                        <div class="error-message" id="name-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Alamat Email <span class="required-asterisk">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="cth: email@anda.com" required>
+                        <div class="error-message" id="email-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Nomor Telepon <span class="required-asterisk">*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="cth: 081234567890" required pattern="^(08|\+628)\d{8,12}$">
+                        <div class="error-message" id="phone-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="datetime">Tanggal & Waktu Pengambilan/Pengantaran <span class="required-asterisk">*</span></label>
+                        <input type="datetime-local" id="datetime" name="datetime" required>
+                        <div class="error-message" id="datetime-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-choice">Pilih Produk <span class="required-asterisk">*</span></label>
+                        <select id="product-choice" name="product-choice" required>
+                            <option value="">-- Pilih Produk Boba --</option>
+                        </select>
+                        <div class="error-message" id="product-choice-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Jumlah Pesanan <span class="required-asterisk">*</span></label>
+                        <input type="number" id="quantity" name="quantity" placeholder="Min. 1" min="1" required>
+                        <div class="error-message" id="quantity-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="special-request">Permintaan Khusus (opsional)</label>
+                        <textarea id="special-request" name="special-request" rows="3" placeholder="cth: Tanpa es, gula sedikit"></textarea>
+                        <div class="error-message" id="special-request-error"></div>
+                    </div>
+                    <button type="submit" class="cta-button preorder-submit-btn">Kirim Pre-Order</button>
+                </form>
+                <div id="form-submission-message" class="form-submission-message" style="display: none;"></div>
             </div>
         </section>
+
     </main>
 
     <footer class="footer">
@@ -166,22 +162,36 @@
             <span>Beranda</span>
         </a>
         <a href="#menu" class="bottom-nav-item" aria-label="Menu">
-            <i class="fas fa-mug-hot"></i> <!-- atau fas fa-store -->
+            <i class="fas fa-mug-hot"></i>
             <span>Menu</span>
         </a>
-        <a href="#promo" class="bottom-nav-item" aria-label="Promo/Favorit"> <!-- Menggabungkan dengan Promo -->
-            <i class="fas fa-heart"></i> <!-- atau fas fa-tags untuk promo -->
+        <a href="#promo" class="bottom-nav-item" aria-label="Promo">
+            <i class="fas fa-tags"></i> <!-- Ganti ikon jika ingin -->
             <span>Promo</span>
         </a>
-        <a href="#" class="bottom-nav-item" aria-label="Keranjang"> <!-- Link ke halaman keranjang jika ada -->
-            <i class="fas fa-shopping-cart"></i>
-            <span>Keranjang</span>
+        <a href="#preorder" class="bottom-nav-item" aria-label="Pre-Order"> 
+            <i class="fas fa-calendar-check"></i> <!-- Ganti ikon jika ingin -->
+            <span>Pre-Order</span>
         </a>
-        <a href="#" class="bottom-nav-item" aria-label="Profil"> <!-- Link ke halaman profil jika ada -->
+         <a href="#" class="bottom-nav-item" aria-label="Profil">
             <i class="fas fa-user"></i>
             <span>Profil</span>
         </a>
     </nav>
+
+    <!-- Modal Detail Produk -->
+    <div id="product-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Tutup modal">×</button>
+            <img id="modal-img" src="" alt="Detail Produk">
+            <h3 id="modal-name">Nama Produk</h3>
+            <p id="modal-category" class="modal-category-label">Kategori</p>
+            <p id="modal-description">Deskripsi lengkap produk akan ada di sini.</p>
+            <span id="modal-price" class="modal-price-tag">Rp 0</span>
+            <button class="cta-button modal-order-btn">Pesan Sekarang</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
