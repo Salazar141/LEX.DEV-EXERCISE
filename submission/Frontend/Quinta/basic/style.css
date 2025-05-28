@@ -505,7 +505,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     box-shadow: 0 0 0 3px var(--background-color), 0 0 0 6px var(--accent-color); 
 }
 .cta-nav:focus-visible, .cta-button:focus-visible, .add-to-cart-btn:focus-visible, .map-link:focus-visible,
-.bottom-nav-item:focus-visible { /* Tambahkan bottom-nav-item */
+.bottom-nav-item:focus-visible {
     outline: 3px solid var(--boba-brown-color); 
     box-shadow: 0 0 0 3px var(--card-background), 0 0 0 6px var(--boba-brown-color);
 }
@@ -519,4 +519,296 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+/* -------------------- */
+/* -- MENU GALLERY & FILTER -- */
+/* -------------------- */
+.menu-gallery-section { background-color: var(--secondary-color); }
+.filter-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+.filter-btn {
+    background-color: var(--card-background);
+    color: var(--text-color);
+    border: 1px solid var(--footer-background);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--border-radius-lg);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-speed-fast);
+    font-size: 0.9rem;
+}
+.filter-btn:hover, .filter-btn:focus {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    border-color: var(--primary-color);
+}
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Adjust menu-grid for dynamic content */
+#product-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Default 2 kolom untuk mobile */
+    gap: var(--spacing-md);
+}
+.menu-card .category-label {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: var(--border-radius-sm);
+    margin-bottom: var(--spacing-xs);
+    font-weight: 600;
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+}
+.menu-card { 
+    position: relative; 
+    cursor: pointer; 
+}
+
+
+/* -------------------- */
+/* -- PRODUCT MODAL -- */
+/* -------------------- */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-speed), visibility var(--transition-speed);
+}
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.modal-content {
+    background-color: var(--card-background);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 2001;
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    transform: scale(0.95);
+    transition: transform var(--transition-speed);
+    text-align: center;
+}
+.modal.active .modal-content {
+    transform: scale(1);
+}
+.modal-close {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--text-light);
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+}
+.modal-close:hover {
+    color: var(--text-color);
+}
+.modal-content img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: var(--border-radius-sm);
+    margin-bottom: var(--spacing-md);
+}
+.modal-content h3 {
+    color: var(--heading-color);
+    font-size: 1.6rem;
+    margin-bottom: var(--spacing-xs);
+}
+.modal-category-label {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-bottom: var(--spacing-sm);
+}
+.modal-content p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+.modal-price-tag {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+}
+.modal-order-btn {
+    width: 100%;
+}
+
+.preorder-section {
+    background-color: var(--background-color);
+    text-align: center;
+}
+.preorder-section h2 { margin-bottom: var(--spacing-sm); }
+.preorder-section p { max-width: 600px; margin-left: auto; margin-right: auto; margin-bottom: var(--spacing-lg); color: var(--text-light); }
+
+.preorder-form-container {
+    background-color: var(--card-background);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 6px 18px rgba(121, 85, 72, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+    color: var(--heading-color);
+    font-size: 0.9rem;
+}
+.form-group .required-asterisk {
+    color: var(--primary-color);
+    margin-left: 2px;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="datetime-local"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 1px solid var(--footer-background);
+    border-radius: var(--border-radius-sm);
+    font-size: 0.95rem;
+    color: var(--text-color);
+    background-color: #fff;
+    transition: border-color var(--transition-speed-fast);
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(229, 115, 115, 0.2);
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+.error-message {
+    font-size: 0.8rem;
+    color: #D32F2F; /* Red for errors */
+    margin-top: var(--spacing-xs);
+    display: none; /* Hidden by default */
+    font-weight: 500;
+}
+.form-group input.invalid,
+.form-group select.invalid,
+.form-group textarea.invalid {
+    border-color: #D32F2F;
+}
+.preorder-submit-btn {
+    width: 100%;
+    margin-top: var(--spacing-md);
+}
+
+.form-submission-message {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    font-weight: 600;
+}
+.form-submission-message.success {
+    background-color: #E8F5E9; /* Light green */
+    color: #2E7D32; /* Dark green */
+    border: 1px solid #A5D6A7;
+}
+.form-submission-message.error {
+    background-color: #FFEBEE; /* Light red */
+    color: #C62828; /* Dark red */
+    border: 1px solid #EF9A9A;
+}
+
+
+/* Responsive Adjustments untuk Menu Grid */
+@media (min-width: 580px) { 
+    #product-menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+     .menu-card img { height: 140px; }
+}
+
+@media (min-width: 768px) {
+    #product-menu-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 kolom untuk tablet */
+        gap: var(--spacing-lg);
+    }
+    .menu-card img { height: 160px; } /* Sesuaikan tinggi gambar */
+
+    /* Form layout for larger screens */
+    .preorder-form-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-md) var(--spacing-lg);
+    }
+    .preorder-form-container .form-group:nth-child(1), /* Nama */
+    .preorder-form-container .form-group:nth-child(2), /* Email */
+    .preorder-form-container .form-group:nth-child(7) { /* Special Request */
+        grid-column: 1 / -1; /* Full width */
+    }
+    .preorder-form-container .preorder-submit-btn {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* ... CSS Anda yang sudah ada ... */
+    #product-menu-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 kolom untuk desktop */
+    }
+    .menu-card img { height: 180px; }
 }
